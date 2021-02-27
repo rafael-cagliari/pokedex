@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">pokedex</string>
+    <string name="pikachu">Pikachu</string>
+
+    <string name="bulbassaur">Bulbassaur</string>
+    <string name="ivyssaur">Ivysaur</string>
+    <string name="venossaur">Venossaur</string>
+    <string name="charmander">Charmander</string>
+    <string name="charmeleon">Charmeleon</string>
+    <string name="charizard">Charizard</string>
+    <string name="squirtle">Squirtle</string>
+    <string name="wartotle">Wartotle</string>
+    <string name="blastoise">Blastoise</string>
+
+</resources>
