@@ -9,8 +9,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.pokedex.R
 import com.example.pokedex.model.Pokemon
 import com.example.pokedex.ui.PokemonListFragment
+import com.squareup.picasso.Picasso
 
-class PokemonAdapter(private val context: PokemonListFragment, private val dataset: List<Pokemon>) :
+class PokemonAdapter(private val pokemonList: List<Pokemon>) :
     RecyclerView.Adapter<PokemonAdapter.ItemViewHolder>() {
 
     class ItemViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
@@ -25,10 +26,13 @@ class PokemonAdapter(private val context: PokemonListFragment, private val datas
     }
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
-        val item = dataset[position]
-        holder.textView.text = context.resources.getString(item.name)
+        val pokemon = pokemonList[position]
+        holder.textView.text = pokemon.name
+        Picasso.get()
+            .load("${pokemon.img}")
+            .resize(150, 150)
+            .into(holder.imageView)
         holder.imageView.run {
-            setImageResource(item.image)
             if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
                 clipToOutline = true
             }
@@ -37,6 +41,6 @@ class PokemonAdapter(private val context: PokemonListFragment, private val datas
     }
 
     override fun getItemCount(): Int {
-        return dataset.size
+        return pokemonList.size
     }
 }

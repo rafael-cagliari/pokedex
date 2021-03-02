@@ -1,25 +1,21 @@
 package com.example.pokedex.data
 
-import com.example.pokedex.R
-import com.example.pokedex.model.Pokemon
+import android.content.Context
+import android.util.Log
+import com.example.pokedex.model.PokemonResponse
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 
 
 class Datasource() {
+    fun gsonFromJson(context: Context, filename: String): PokemonResponse {
+        val parser = ParseUtils()
+        val jsonFileString = parser.parseFromJson(context, filename) ?: "error while parsing"
+        Log.d("response", jsonFileString)
 
+        val gson = Gson()
+        val pokemonTypeToken = object : TypeToken<PokemonResponse>() {}.type
 
-//Creates a list of Pokemon objects
-
-    fun loadPokemon(): List<Pokemon>{
-        return listOf<Pokemon>(
-                Pokemon(R.string.bulbassaur, R.drawable._01),
-                Pokemon(R.string.ivyssaur, R.drawable._02),
-                Pokemon(R.string.venossaur, R.drawable._03),
-                Pokemon(R.string.charmander, R.drawable._04),
-                Pokemon(R.string.charmeleon, R.drawable._05),
-                Pokemon(R.string.charizard, R.drawable._06),
-                Pokemon(R.string.squirtle, R.drawable._07),
-                Pokemon(R.string.wartotle, R.drawable._08),
-                Pokemon(R.string.blastoise, R.drawable._09)
-        )
+        return gson.fromJson(jsonFileString, pokemonTypeToken)
     }
 }

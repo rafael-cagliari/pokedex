@@ -11,9 +11,9 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.pokedex.adapter.PokemonAdapter
 import com.example.pokedex.data.Datasource
 import com.example.pokedex.databinding.PokemonListFragmentBinding
+import com.squareup.picasso.Picasso
 
 class PokemonListFragment : Fragment() {
-    val myDataset = Datasource().loadPokemon()
     private var _binding: PokemonListFragmentBinding? = null
     private val binding get() = _binding!!
 
@@ -33,9 +33,10 @@ class PokemonListFragment : Fragment() {
     private lateinit var recyclerView: RecyclerView
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        val pokemonData = Datasource().gsonFromJson(requireContext(), "response.json")
         recyclerView = binding.recyclerView
         recyclerView.layoutManager = StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL)
-        recyclerView.adapter = PokemonAdapter(this, myDataset)
+        recyclerView.adapter = PokemonAdapter(pokemonData.pokemons ?: listOf())
     }
 
     override fun onDestroyView() {
