@@ -1,6 +1,5 @@
 package com.example.pokedex.adapter
 
-import android.content.Context
 import android.graphics.drawable.Drawable
 import android.os.Build
 import android.view.LayoutInflater
@@ -10,9 +9,11 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.core.content.ContextCompat
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pokedex.R
 import com.example.pokedex.model.Pokemon
+import com.example.pokedex.ui.PokemonListFragmentDirections
 import com.squareup.picasso.Picasso
 
 class PokemonAdapter(private val pokemonList: List<Pokemon>) :
@@ -41,6 +42,11 @@ class PokemonAdapter(private val pokemonList: List<Pokemon>) :
         holder.pokemonType1.setImageDrawable(holder.typeSelector(pokemon.type?.get(0)))
         if(pokemon.type?.size!! > 1){ holder.pokemonType2.setImageDrawable(holder.typeSelector(pokemon.type?.get(1)))}
         else {holder.pokemonType2.setImageDrawable(null)}
+        holder.pokemonImage.setOnClickListener{
+            val action = PokemonListFragmentDirections.actionPokemonListFragmentToPokemonDetailsFragment(message = "https://img.pokemondb.net/sprites/sword-shield/normal/${pokemon.name.toString().toLowerCase()}.png"!!)
+            holder.itemView.findNavController().navigate(action)
+        }
+
     }
 
     override fun getItemCount(): Int {
