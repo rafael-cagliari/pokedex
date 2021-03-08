@@ -1,6 +1,8 @@
 package com.example.pokedex.adapter
 
 import android.graphics.drawable.Drawable
+import android.media.AudioManager
+import android.media.MediaPlayer
 import android.os.Build
 import android.view.LayoutInflater
 import android.view.View
@@ -43,7 +45,8 @@ class PokemonAdapter(private val pokemonList: List<Pokemon>) :
         if(pokemon.type?.size!! > 1){ holder.pokemonType2.setImageDrawable(holder.typeSelector(pokemon.type?.get(1)))}
         else {holder.pokemonType2.setImageDrawable(null)}
         holder.pokemonImage.setOnClickListener{
-            val action = PokemonListFragmentDirections.actionPokemonListFragmentToPokemonDetailsFragment(message = "https://img.pokemondb.net/sprites/sword-shield/normal/${pokemon.name.toString().toLowerCase()}.png"!!)
+            val action = PokemonListFragmentDirections.actionPokemonListFragmentToPokemonDetailsFragment(message = "https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/${pokemon.name.toString().toLowerCase()}.png"!!,
+                cries = pokemon.name.toString().toLowerCase())
             holder.itemView.findNavController().navigate(action)
         }
 
