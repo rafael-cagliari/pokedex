@@ -23,8 +23,28 @@
             android:name="message"
             app:argType="string" />
         <argument
-            android:name="cries"
-            app:argType="string"
-            app:nullable="true" />
+            android:name="number"
+            app:argType="string" />
+        <argument
+            android:name="type"
+            app:argType="string[]" />
+        <argument
+            android:name="height"
+            app:argType="string" />
+        <argument
+            android:name="wight"
+            app:argType="string" />
+        <argument
+            android:name="egg"
+            app:argType="string" />
+        <argument
+            android:name="candy"
+            app:argType="string" />
+        <argument
+            android:name="spawn_chance"
+            app:argType="string" />
+        <argument
+            android:name="spawn_time"
+            app:argType="string" />
     </fragment>
 </navigation>

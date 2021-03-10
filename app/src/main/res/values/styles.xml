@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+            <style name="PokeDetailsTitle" parent="TextAppearance.AppCompat">
+                <item name="android:layout_height">wrap_content</item>
+                <item name="android:layout_width">match_parent</item>
+                <item name="android:layout_marginTop">30dp</item>
+                <item name="android:paddingLeft">15dp</item>
+                <item name="android:layout_gravity">left</item>
+                <item name="android:textColor">#0C0C0C</item>
+                <item name="android:textSize">20dp</item>
+                <item name="android:textStyle">bold</item>
+
+
+        </style>
+
+    <style name="PokeDetailsFilling" parent="TextAppearance.AppCompat">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:paddingLeft">45dp</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textColor">#0C0C0C</item>
+        <item name="android:textSize">18dp</item>
+
+
+
+    </style>
+
+</resources>

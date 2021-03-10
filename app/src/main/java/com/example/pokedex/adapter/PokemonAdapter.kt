@@ -45,8 +45,9 @@ class PokemonAdapter(private val pokemonList: List<Pokemon>) :
         if(pokemon.type?.size!! > 1){ holder.pokemonType2.setImageDrawable(holder.typeSelector(pokemon.type?.get(1)))}
         else {holder.pokemonType2.setImageDrawable(null)}
         holder.pokemonImage.setOnClickListener{
-            val action = PokemonListFragmentDirections.actionPokemonListFragmentToPokemonDetailsFragment(message = "https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/${pokemon.name.toString().toLowerCase()}.png"!!,
-                cries = pokemon.name.toString().toLowerCase())
+            val action = PokemonListFragmentDirections.actionPokemonListFragmentToPokemonDetailsFragment(message = pokemon.name.toString().toLowerCase(), number = pokemon.num!!,
+            height = pokemon.height!!, wight = pokemon.weight!!, egg = pokemon.egg!!, candy = pokemon.candy!!, spawnTime = pokemon.spawnTime!!,
+            spawnChance = pokemon.spawnChance.toString(), type = pokemon.type.toTypedArray())
             holder.itemView.findNavController().navigate(action)
         }
 
