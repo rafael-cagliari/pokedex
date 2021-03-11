@@ -20,7 +20,7 @@
         android:name="com.example.pokedex.ui.PokemonDetailsFragment"
         android:label="PokemonDetailsFragment" >
         <argument
-            android:name="message"
+            android:name="name_lower_case"
             app:argType="string" />
         <argument
             android:name="number"
@@ -46,5 +46,10 @@
         <argument
             android:name="spawn_time"
             app:argType="string" />
+        <argument android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="weaknesses"
+            app:argType="string[]" />
     </fragment>
 </navigation>

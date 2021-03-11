@@ -1,8 +1,6 @@
 package com.example.pokedex.adapter
 
 import android.graphics.drawable.Drawable
-import android.media.AudioManager
-import android.media.MediaPlayer
 import android.os.Build
 import android.view.LayoutInflater
 import android.view.View
@@ -18,9 +16,10 @@ import com.example.pokedex.model.Pokemon
 import com.example.pokedex.ui.PokemonListFragmentDirections
 import com.squareup.picasso.Picasso
 
-class PokemonAdapter(private val pokemonList: List<Pokemon>) :
-    RecyclerView.Adapter<PokemonAdapter.ItemViewHolder>() {
 
+class PokemonAdapter(private val pokemonList: List<Pokemon>) :
+
+    RecyclerView.Adapter<PokemonAdapter.ItemViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         val adapterLayout = LayoutInflater.from(parent.context)
             .inflate(R.layout.pokemon_item, parent, false)
@@ -42,12 +41,26 @@ class PokemonAdapter(private val pokemonList: List<Pokemon>) :
         }
         holder.pokemonId.text = "Nº: " + pokemon.id
         holder.pokemonType1.setImageDrawable(holder.typeSelector(pokemon.type?.get(0)))
-        if(pokemon.type?.size!! > 1){ holder.pokemonType2.setImageDrawable(holder.typeSelector(pokemon.type?.get(1)))}
-        else {holder.pokemonType2.setImageDrawable(null)}
-        holder.pokemonImage.setOnClickListener{
-            val action = PokemonListFragmentDirections.actionPokemonListFragmentToPokemonDetailsFragment(message = pokemon.name.toString().toLowerCase(), number = pokemon.num!!,
-            height = pokemon.height!!, wight = pokemon.weight!!, egg = pokemon.egg!!, candy = pokemon.candy!!, spawnTime = pokemon.spawnTime!!,
-            spawnChance = pokemon.spawnChance.toString(), type = pokemon.type.toTypedArray())
+        if (pokemon.type?.size!! > 1) {
+            holder.pokemonType2.setImageDrawable(holder.typeSelector(pokemon.type?.get(1)))
+        } else {
+            holder.pokemonType2.setImageDrawable(null)
+        }
+        holder.pokemonImage.setOnClickListener {
+            val action =
+                PokemonListFragmentDirections.actionPokemonListFragmentToPokemonDetailsFragment(
+                    name = pokemon.name!!,
+                    nameLowerCase = pokemon.name.toString().toLowerCase(),
+                    number = pokemon.num!!,
+                    height = pokemon.height!!,
+                    wight = pokemon.weight!!,
+                    egg = pokemon.egg!!,
+                    candy = pokemon.candy!!,
+                    spawnTime = pokemon.spawnTime!!,
+                    spawnChance = pokemon.spawnChance.toString(),
+                    type = pokemon.type.toTypedArray(),
+                    weaknesses = pokemon.weaknesses!!.toTypedArray()
+                )
             holder.itemView.findNavController().navigate(action)
         }
 
@@ -55,6 +68,7 @@ class PokemonAdapter(private val pokemonList: List<Pokemon>) :
 
     override fun getItemCount(): Int {
         return pokemonList.size
+
     }
 
     class ItemViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
