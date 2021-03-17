@@ -1,64 +1,76 @@
 package com.example.pokedex.model
+import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
 
 data class Pokemon(
-    @SerializedName("id")
 
-     val id: Int? = null,
+@SerializedName("id")
+@Expose
 
-    @SerializedName("num")
+ val id: Int? = null,
+@SerializedName("num")
+@Expose
+ val num: String? = null,
 
-     val num: String? = null,
+@SerializedName("name")
+@Expose
+ val name: String? = null,
 
-    @SerializedName("name")
+@SerializedName("img")
+@Expose
+ val img: String? = null,
 
-     val name: String? = null,
+@SerializedName("type")
+@Expose
+ val type: List<String>? = null,
 
-    @SerializedName("img")
+@SerializedName("height")
+@Expose
+ val height: String? = null,
 
-     val img: String? = null,
+@SerializedName("weight")
+@Expose
+ val weight: String? = null,
 
-    @SerializedName("type")
+@SerializedName("candy")
+@Expose
+ val candy: String? = null,
 
-     val type: List<String>? = null,
+@SerializedName("candy_count")
+@Expose
+ val candyCount: Int? = null,
 
-    @SerializedName("height")
+@SerializedName("egg")
+@Expose
+ val egg: String? = null,
 
-     val height: String? = null,
+@SerializedName("spawn_chance")
+@Expose
+ val spawnChance: Double? = null,
 
-    @SerializedName("weight")
+@SerializedName("avg_spawns")
+@Expose
+ val avgSpawns: Double? = null,
 
-     val weight: String? = null,
-    @SerializedName("candy")
+@SerializedName("spawn_time")
+@Expose
+ val spawnTime: String? = null,
 
-     val candy: String? = null,
+@SerializedName("multipliers")
+@Expose
+ val multipliers: List<Double>? = null,
 
-    @SerializedName("candy_count")
+@SerializedName("weaknesses")
+@Expose
+ val weaknesses: List<String>? = null,
 
-     val candyCount: Int? = null,
+@SerializedName("next_evolution")
+@Expose
+ val nextEvolution: List<NextEvolution>? = null,
 
-    @SerializedName("egg")
+@SerializedName("prev_evolution")
+@Expose
+ val prevEvolution: List<PrevEvolution>? = null
 
-     val egg: String? = null,
-
-    @SerializedName("spawn_chance")
-
-     val spawnChance: Double? = null,
-
-    @SerializedName("avg_spawns")
-
-     val avgSpawns: Double? = null,
-
-    @SerializedName("spawn_time")
-
-     val spawnTime: String? = null,
-
-    @SerializedName("multipliers")
-
-     val multipliers: Any? = null,
-
-    @SerializedName("weaknesses")
-
-    val weaknesses: List<String>? = null
 )

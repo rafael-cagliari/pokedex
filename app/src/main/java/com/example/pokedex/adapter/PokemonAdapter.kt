@@ -2,6 +2,7 @@ package com.example.pokedex.adapter
 
 import android.graphics.drawable.Drawable
 import android.os.Build
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -15,6 +16,7 @@ import com.example.pokedex.R
 import com.example.pokedex.model.Pokemon
 import com.example.pokedex.ui.PokemonListFragmentDirections
 import com.squareup.picasso.Picasso
+
 
 
 class PokemonAdapter(private val pokemonList: List<Pokemon>) :

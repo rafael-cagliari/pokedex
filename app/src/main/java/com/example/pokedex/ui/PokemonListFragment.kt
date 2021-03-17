@@ -1,17 +1,17 @@
 package com.example.pokedex.ui
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
+import android.widget.ArrayAdapter
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import com.example.pokedex.R
 import com.example.pokedex.adapter.PokemonAdapter
 import com.example.pokedex.data.Datasource
 import com.example.pokedex.databinding.PokemonListFragmentBinding
-import com.squareup.picasso.Picasso
+import com.example.pokedex.model.Pokemon
 
 class PokemonListFragment : Fragment() {
     private var _binding: PokemonListFragmentBinding? = null
@@ -23,6 +23,7 @@ class PokemonListFragment : Fragment() {
     }
 
     override fun onCreateView(
+
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
@@ -47,4 +48,5 @@ class PokemonListFragment : Fragment() {
     companion object {
         fun newInstance() = PokemonListFragment()
     }
+
 }
