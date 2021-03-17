@@ -6,6 +6,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Filter
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.RequiresApi
@@ -16,12 +17,42 @@ import com.example.pokedex.R
 import com.example.pokedex.model.Pokemon
 import com.example.pokedex.ui.PokemonListFragmentDirections
 import com.squareup.picasso.Picasso
-
+import java.util.*
+import kotlin.collections.ArrayList
 
 
 class PokemonAdapter(private val pokemonList: List<Pokemon>) :
 
     RecyclerView.Adapter<PokemonAdapter.ItemViewHolder>() {
+    var pokemonFilterList = pokemonList.toMutableList()
+    fun getFilter(): Filter{
+        return object : Filter(){
+            override fun performFiltering(constraint: CharSequence?): FilterResults {
+                val charSearch = constraint.toString()
+                if (charSearch.isEmpty()){
+                    pokemonFilterList = pokemonList.toMutableList()
+                } else {
+                    val resultList = pokemonList.toMutableList()
+                    for (row in pokemonList) {
+                        if (row.name?.toLowerCase(Locale.ROOT)?.contains(charSearch.toLowerCase(Locale.ROOT)) == true) {
+                            resultList.add(row)
+                        }
+                    }
+                    pokemonFilterList = resultList
+                }
+                val filterResults = FilterResults()
+                filterResults.values = pokemonFilterList
+                return filterResults
+            }
+
+            @Suppress("UNCHECKED_CAST")
+            override fun publishResults(constraint: CharSequence?, results: FilterResults?) {
+                pokemonFilterList = results?.values as MutableList<Pokemon>
+                notifyDataSetChanged()
+            }
+        }
+    }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         val adapterLayout = LayoutInflater.from(parent.context)
             .inflate(R.layout.pokemon_item, parent, false)
@@ -30,7 +61,7 @@ class PokemonAdapter(private val pokemonList: List<Pokemon>) :
 
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
-        val pokemon = pokemonList[position]
+        val pokemon = pokemonFilterList[position]
         holder.pokemonName.text = pokemon.name
         Picasso.get()
             .load("${pokemon.img}")
@@ -69,7 +100,7 @@ class PokemonAdapter(private val pokemonList: List<Pokemon>) :
     }
 
     override fun getItemCount(): Int {
-        return pokemonList.size
+        return pokemonFilterList.size
 
     }
 

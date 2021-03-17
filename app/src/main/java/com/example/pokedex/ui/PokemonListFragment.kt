@@ -3,6 +3,7 @@ package com.example.pokedex.ui
 import android.os.Bundle
 import android.view.*
 import android.widget.ArrayAdapter
+import android.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -38,6 +39,20 @@ class PokemonListFragment : Fragment() {
         recyclerView = binding.recyclerView
         recyclerView.layoutManager = StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL)
         recyclerView.adapter = PokemonAdapter(pokemonData.pokemons ?: listOf())
+
+        binding.pokemonSearch.setOnQueryTextListener(object:SearchView.OnQueryTextListener,
+            androidx.appcompat.widget.SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+               return false
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                val adpFilter = PokemonAdapter(pokemonData.pokemons ?: listOf()).getFilter()
+                adpFilter.filter(newText)
+                return false
+            }
+
+        })
     }
 
     override fun onDestroyView() {
