@@ -53,7 +53,7 @@ class PokemonDetailsFragment : Fragment() {
         binding.detailsWeight.text = args.wight
         binding.detailsHeight.text = args.height
         binding.detailsNum.text = args.number
-        binding.detailsCandy.text = args.candy
+        binding.description.text = args.description
         binding.typeDetail1.setImageDrawable(typeSelector(args.type[0]))
         if (args.type.size > 1) {
             binding.typeDetail2.setImageDrawable(typeSelector(args.type[1]))

@@ -51,5 +51,8 @@
         <argument
             android:name="weaknesses"
             app:argType="string[]" />
+        <argument
+            android:name="description"
+            app:argType="string" />
     </fragment>
 </navigation>

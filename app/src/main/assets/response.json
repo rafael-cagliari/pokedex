@@ -1,5 +1,6 @@
 {
   "pokemon": [{
+    "desc": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.",
     "id": 1,
     "num": "001",
     "name": "Bulbasaur",
@@ -31,6 +32,7 @@
       "name": "Venusaur"
     }]
   }, {
+    "desc" : "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.",
     "id": 2,
     "num": "002",
     "name": "Ivysaur",
@@ -66,6 +68,7 @@
       "name": "Venusaur"
     }]
   }, {
+    "desc" : "Its plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.",
     "id": 3,
     "num": "003",
     "name": "Venusaur",
@@ -96,6 +99,7 @@
       "name": "Ivysaur"
     }]
   }, {
+    "desc" : "It has a barbaric nature. In battle, it whips its fiery tail around and slashes away with sharp claws.",
     "id": 4,
     "num": "004",
     "name": "Charmander",
@@ -125,6 +129,7 @@
       "name": "Charizard"
     }]
   }, {
+    "desc" : "It has a barbaric nature. In battle, it whips its fiery tail around and slashes away with sharp claws.",
     "id": 5,
     "num": "005",
     "name": "Charmeleon",
@@ -155,6 +160,7 @@
       "name": "Charizard"
     }]
   }, {
+    "desc" : "It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames.",
     "id": 6,
     "num": "006",
     "name": "Charizard",
@@ -184,6 +190,7 @@
       "name": "Charmeleon"
     }]
   }, {
+    "desc" : "When it retracts its long neck into its shell, it squirts out water with vigorous force.",
     "id": 7,
     "num": "007",
     "name": "Squirtle",
@@ -212,6 +219,7 @@
       "name": "Blastoise"
     }]
   }, {
+    "desc" : "It is recognized as a symbol of longevity. If its shell has algae on it, that Wartortle is very old.",
     "id": 8,
     "num": "008",
     "name": "Wartortle",
@@ -241,6 +249,7 @@
       "name": "Blastoise"
     }]
   }, {
+    "desc" : "It crushes its foe under its heavy body to cause fainting. In a pinch, it will withdraw inside its shell.",
     "id": 9,
     "num": "009",
     "name": "Blastoise",
@@ -268,6 +277,7 @@
       "name": "Wartortle"
     }]
   }, {
+    "desc" : "For protection, it releases a horrible stench from the antenna on its head to drive away enemies.",
     "id": 10,
     "num": "010",
     "name": "Caterpie",
@@ -297,6 +307,7 @@
       "name": "Butterfree"
     }]
   }, {
+    "desc" : "It is waiting for the moment to evolve. At this stage, it can only harden, so it remains motionless to avoid attack.",
     "id": 11,
     "num": "011",
     "name": "Metapod",
@@ -330,6 +341,7 @@
       "name": "Butterfree"
     }]
   }, {
+    "desc" : "In battle, it flaps its wings at great speed to release highly toxic dust into the air.",
     "id": 12,
     "num": "012",
     "name": "Butterfree",
@@ -361,6 +373,7 @@
       "name": "Metapod"
     }]
   }, {
+    "desc" : "Beware of the sharp stinger on its head. It hides in grass and bushes where it eats leaves.",
     "id": 13,
     "num": "013",
     "name": "Weedle",
@@ -395,6 +408,7 @@
       "name": "Beedrill"
     }]
   }, {
+    "desc" : "Able to move only slightly. When endangered, it may stick out its stinger and poison its enemy.",
     "id": 14,
     "num": "014",
     "name": "Kakuna",
@@ -430,6 +444,7 @@
       "name": "Beedrill"
     }]
   }, {
+    "desc" : "It has three poisonous stingers on its forelegs and its tail. They are used to jab its enemy repeatedly.",
     "id": 15,
     "num": "015",
     "name": "Beedrill",
@@ -460,6 +475,7 @@
       "name": "Kakuna"
     }]
   }, {
+    "desc" : "Very docile. If attacked, it will often kick up sand to protect itself rather than fight back.",
     "id": 16,
     "num": "016",
     "name": "Pidgey",
@@ -492,6 +508,7 @@
       "name": "Pidgeot"
     }]
   }, {
+    "desc" : "This Pokémon is full of vitality. It constantly flies around its large territory in search of prey.",
     "id": 17,
     "num": "017",
     "name": "Pidgeotto",
@@ -522,6 +539,7 @@
       "name": "Pidgeot"
     }]
   }, {
+    "desc" : "This Pokémon flies at Mach 2 speed, seeking prey. Its large talons are feared as wicked weapons.",
     "id": 18,
     "num": "018",
     "name": "Pidgeot",
@@ -550,6 +568,7 @@
       "name": "Pidgeotto"
     }]
   }, {
+    "desc" : "Will chew on anything with its fangs. If you see one, you can be certain that 40 more live in the area.",
     "id": 19,
     "num": "019",
     "name": "Rattata",
@@ -577,6 +596,7 @@
       "name": "Raticate"
     }]
   }, {
+    "desc" : "Its hind feet are webbed. They act as flippers, so it can swim in rivers and hunt for prey.",
     "id": 20,
     "num": "020",
     "name": "Raticate",
@@ -600,6 +620,7 @@
       "name": "Rattata"
     }]
   }, {
+    "desc" : "Inept at flying high. However, it can fly around very fast to protect its territory.",
     "id": 21,
     "num": "021",
     "name": "Spearow",
@@ -629,6 +650,7 @@
       "name": "Fearow"
     }]
   }, {
+    "desc" : "A Pokémon that dates back many years. If it senses danger, it flies high and away, instantly.",
     "id": 22,
     "num": "022",
     "name": "Fearow",
@@ -654,6 +676,7 @@
       "name": "Spearow"
     }]
   }, {
+    "desc" : "The older it gets, the longer it grows. At night, it wraps its long body around tree branches to rest.",
     "id": 23,
     "num": "023",
     "name": "Ekans",
@@ -682,6 +705,7 @@
       "name": "Arbok"
     }]
   }, {
+    "desc" : "The frightening patterns on its belly have been studied. Six variations have been confirmed.",
     "id": 24,
     "num": "024",
     "name": "Arbok",
@@ -706,6 +730,7 @@
       "name": "Ekans"
     }]
   }, {
+    "desc" : "Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.",
     "id": 25,
     "num": "025",
     "name": "Pikachu",
@@ -730,6 +755,7 @@
       "name": "Raichu"
     }]
   }, {
+    "desc" : "Its long tail serves as a ground to protect itself from its own high-voltage power.",
     "id": 26,
     "num": "026",
     "name": "Raichu",
@@ -753,6 +779,7 @@
       "name": "Pikachu"
     }]
   }, {
+    "desc" : "It loves to bathe in the grit of dry, sandy areas. By sand bathing, the Pokémon rids itself of dirt and moisture clinging to its body.",
     "id": 27,
     "num": "027",
     "name": "Sandshrew",
@@ -779,6 +806,7 @@
       "name": "Sandslash"
     }]
   }, {
+    "desc" : "The drier the area Sandslash lives in, the harder and smoother the Pokémon’s spikes will feel when touched.",
     "id": 28,
     "num": "028",
     "name": "Sandslash",
@@ -804,6 +832,7 @@
       "name": "Sandshrew"
     }]
   }, {
+    "desc" : "Females are more sensitive to smells than males. While foraging, they’ll use their whiskers to check wind direction and stay downwind of predators.",
     "id": 29,
     "num": "029",
     "name": "Nidoran ♀ (Female)",
@@ -835,6 +864,7 @@
       "name": "Nidoqueen"
     }]
   }, {
+    "desc" : "The horn on its head has atrophied. It’s thought that this happens so Nidorina’s children won’t get poked while their mother is feeding them.",
     "id": 30,
     "num": "030",
     "name": "Nidorina",
@@ -867,6 +897,7 @@
       "name": "Nidoqueen"
     }]
   }, {
+    "desc" : "Nidoqueen is better at defense than offense. With scales like armor, this Pokémon will shield its children from any kind of attack.",
     "id": 31,
     "num": "031",
     "name": "Nidoqueen",
@@ -897,6 +928,7 @@
       "name": "Nidorina"
     }]
   }, {
+    "desc" : "The horn on a male Nidoran’s forehead contains a powerful poison. This is a very cautious Pokémon, always straining its large ears.",
     "id": 32,
     "num": "032",
     "name": "Nidoran ♂ (Male)",
@@ -928,6 +960,7 @@
       "name": "Nidoking"
     }]
   }, {
+    "desc" : "With a horn that’s harder than diamond, this Pokémon goes around shattering boulders as it searches for a moon stone.",
     "id": 33,
     "num": "033",
     "name": "Nidorino",
@@ -957,6 +990,7 @@
       "name": "Nidoking"
     }]
   }, {
+    "desc" : "When it goes on a rampage, it’s impossible to control. But in the presence of a Nidoqueen it’s lived with for a long time, Nidoking calms down.",
     "id": 34,
     "num": "034",
     "name": "Nidoking",
@@ -987,6 +1021,7 @@
       "name": "Nidorino"
     }]
   }, {
+    "desc" : "It is said that happiness will come to those who see a gathering of Clefairy dancing under a full moon.",
     "id": 35,
     "num": "035",
     "name": "Clefairy",
@@ -1014,6 +1049,7 @@
       "name": "Clefable"
     }]
   }, {
+    "desc" : "A timid fairy Pokémon that is rarely seen, it will run and hide the moment it senses people.",
     "id": 36,
     "num": "036",
     "name": "Clefable",
@@ -1037,6 +1073,7 @@
       "name": "Clefairy"
     }]
   }, {
+    "desc" : "While young, it has six gorgeous tails. When it grows, several new tails are sprouted.",
     "id": 37,
     "num": "037",
     "name": "Vulpix",
@@ -1066,6 +1103,7 @@
       "name": "Ninetales"
     }]
   }, {
+    "desc" : "It is said to live 1,000 years, and each of its tails is loaded with supernatural powers.",
     "id": 38,
     "num": "038",
     "name": "Ninetales",
@@ -1091,6 +1129,7 @@
       "name": "Vulpix"
     }]
   }, {
+    "desc" : "Jigglypuff has top-notch lung capacity, even by comparison to other Pokémon. It won’t stop singing its lullabies until its foes fall asleep.",
     "id": 39,
     "num": "039",
     "name": "Jigglypuff",
@@ -1115,6 +1154,7 @@
       "name": "Wigglytuff"
     }]
   }, {
+    "desc" : "The more air it takes in, the more it inflates. If opponents catch it in a bad mood, it will inflate itself to an enormous size to intimidate them.",
     "id": 40,
     "num": "040",
     "name": "Wigglytuff",
@@ -1138,6 +1178,7 @@
       "name": "Jigglypuff"
     }]
   }, {
+    "desc" : "It emits ultrasonic waves from its mouth to check its surroundings. Even in tight caves, Zubat flies around with skill.",
     "id": 41,
     "num": "041",
     "name": "Zubat",
@@ -1168,7 +1209,7 @@
       "num": "042",
       "name": "Golbat"
     }]
-  }, {
+  }, {"desc" : "It loves to drink other creatures’ blood. It’s said that if it finds others of its kind going hungry, it sometimes shares the blood it’s gathered.",
     "id": 42,
     "num": "042",
     "name": "Golbat",
@@ -1195,7 +1236,7 @@
       "num": "041",
       "name": "Zubat"
     }]
-  }, {
+  }, {"desc" : "If exposed to moonlight, it starts to move. It roams far and wide at night to scatter its seeds.",
     "id": 43,
     "num": "043",
     "name": "Oddish",
@@ -1226,7 +1267,7 @@
       "num": "045",
       "name": "Vileplume"
     }]
-  }, {
+  }, {"desc" : "Its pistils exude an incredibly foul odor. The horrid stench can cause fainting at a distance of 1.25 miles.",
     "id": 44,
     "num": "044",
     "name": "Gloom",
@@ -1258,7 +1299,7 @@
       "num": "045",
       "name": "Vileplume"
     }]
-  }, {
+  }, {"desc" : "It has the world’s largest petals. With every step, the petals shake out heavy clouds of toxic pollen.",
     "id": 45,
     "num": "045",
     "name": "Vileplume",
@@ -1289,6 +1330,7 @@
       "name": "Gloom"
     }]
   }, {
+    "desc" : "Burrows under the ground to gnaw on tree roots. The mushrooms on its back absorb most of the nutrition.",
     "id": 46,
     "num": "046",
     "name": "Paras",
@@ -1319,6 +1361,7 @@
       "name": "Parasect"
     }]
   }, {
+    "desc" : "The bug host is drained of energy by the mushroom on its back. The mushroom appears to do all the thinking.",
     "id": 47,
     "num": "047",
     "name": "Parasect",
@@ -1348,6 +1391,7 @@
       "name": "Paras"
     }]
   }, {
+    "desc" : "Its large eyes act as radar. In a bright place, you can see that they are clusters of many tiny eyes.",
     "id": 48,
     "num": "048",
     "name": "Venonat",
@@ -1379,6 +1423,7 @@
       "name": "Venomoth"
     }]
   }, {
+    "desc" : "The powdery scales on its wings are hard to remove from skin. They also contain poison that leaks out on contact.",
     "id": 49,
     "num": "049",
     "name": "Venomoth",
@@ -1406,6 +1451,7 @@
       "name": "Venonat"
     }]
   }, {
+    "desc" : "If a Diglett digs through a field, it leaves the soil perfectly tilled and ideal for planting crops.",
     "id": 50,
     "num": "050",
     "name": "Diglett",
@@ -1432,6 +1478,7 @@
       "name": "Dugtrio"
     }]
   }, {
+    "desc" : "A team of Diglett triplets. It triggers huge earthquakes by burrowing 60 miles underground.",
     "id": 51,
     "num": "051",
     "name": "Dugtrio",
@@ -1457,6 +1504,7 @@
       "name": "Diglett"
     }]
   }, {
+    "desc" : "It loves to collect shiny things. If it’s in a good mood, it might even let its Trainer have a look at its hoard of treasures.",
     "id": 52,
     "num": "052",
     "name": "Meowth",
@@ -1481,6 +1529,7 @@
       "name": "Persian"
     }]
   }, {
+    "desc" : "Getting this prideful Pokémon to warm up to you takes a lot of effort, and it will claw at you the moment it gets annoyed.",
     "id": 53,
     "num": "053",
     "name": "Persian",
@@ -1504,6 +1553,7 @@
       "name": "Meowth"
     }]
   }, {
+    "desc" : "Psyduck is constantly beset by headaches. If the Pokémon lets its strange power erupt, apparently the pain subsides for a while.",
     "id": 54,
     "num": "054",
     "name": "Psyduck",
@@ -1529,6 +1579,7 @@
       "name": "Golduck"
     }]
   }, {
+    "desc" : "This Pokémon lives in gently flowing rivers. It paddles through the water with its long limbs, putting its graceful swimming skills on display.",
     "id": 55,
     "num": "055",
     "name": "Golduck",
@@ -1553,6 +1604,7 @@
       "name": "Psyduck"
     }]
   }, {
+    "desc" : "An agile Pokémon that lives in trees. It angers easily and will not hesitate to attack anything.",
     "id": 56,
     "num": "056",
     "name": "Mankey",
@@ -1582,6 +1634,7 @@
       "name": "Primeape"
     }]
   }, {
+    "desc" : "It stops being angry only when nobody else is around. To view this moment is very difficult.",
     "id": 57,
     "num": "057",
     "name": "Primeape",
@@ -1607,6 +1660,7 @@
       "name": "Mankey"
     }]
   }, {
+    "desc" : "It has a brave and trustworthy nature. It fearlessly stands up to bigger and stronger foes.",
     "id": 58,
     "num": "058",
     "name": "Growlithe",
@@ -1636,6 +1690,7 @@
       "name": "Arcanine"
     }]
   }, {
+    "desc" : "The sight of it running over 6,200 miles in a single day and night has captivated many people.",
     "id": 59,
     "num": "059",
     "name": "Arcanine",
@@ -1661,6 +1716,7 @@
       "name": "Growlithe"
     }]
   }, {
+    "desc" : "For Poliwag, swimming is easier than walking. The swirl pattern on its belly is actually part of the Pokémon’s innards showing through the skin.",
     "id": 60,
     "num": "060",
     "name": "Poliwag",
@@ -1692,6 +1748,7 @@
       "name": "Poliwrath"
     }]
   }, {
+    "desc" : "Staring at the swirl on its belly causes drowsiness. This trait of Poliwhirl’s has been used in place of lullabies to get children to go to sleep.",
     "id": 61,
     "num": "061",
     "name": "Poliwhirl",
@@ -1721,6 +1778,7 @@
       "name": "Poliwrath"
     }]
   }, {
+    "desc" : "Its body is solid muscle. When swimming through cold seas, Poliwrath uses its impressive arms to smash through drift ice and plow forward.",
     "id": 62,
     "num": "062",
     "name": "Poliwrath",
@@ -1752,6 +1810,7 @@
       "name": "Poliwhirl"
     }]
   }, {
+    "desc" : "This Pokémon uses its psychic powers while it sleeps. The contents of Abra’s dreams affect the powers that the Pokémon wields.",
     "id": 63,
     "num": "063",
     "name": "Abra",
@@ -1784,6 +1843,7 @@
       "name": "Alakazam"
     }]
   }, {
+    "desc" : "Using its psychic power, Kadabra levitates as it sleeps. It uses its springy tail as a pillow.",
     "id": 64,
     "num": "064",
     "name": "Kadabra",
@@ -1814,6 +1874,7 @@
       "name": "Alakazam"
     }]
   }, {
+    "desc" : "It has an incredibly high level of intelligence. Some say that Alakazam remembers everything that ever happens to it, from birth till death.",
     "id": 65,
     "num": "065",
     "name": "Alakazam",
@@ -1842,6 +1903,7 @@
       "name": "Kadabra"
     }]
   }, {
+    "desc" : "Its whole body is composed of muscles. Even though it’s the size of a human child, it can hurl 100 grown-ups.",
     "id": 66,
     "num": "066",
     "name": "Machop",
@@ -1874,6 +1936,7 @@
       "name": "Machamp"
     }]
   }, {
+    "desc" : "Its muscular body is so powerful, it must wear a power-save belt to be able to regulate its motions.",
     "id": 67,
     "num": "067",
     "name": "Machoke",
@@ -1904,6 +1967,7 @@
       "name": "Machamp"
     }]
   }, {
+    "desc" : "It quickly swings its four arms to rock its opponents with ceaseless punches and chops from all angles.",
     "id": 68,
     "num": "068",
     "name": "Machamp",
@@ -1932,6 +1996,7 @@
       "name": "Machoke"
     }]
   }, {
+    "desc" : "Prefers hot and humid places. It ensnares tiny bugs with its vines and devours them.",
     "id": 69,
     "num": "069",
     "name": "Bellsprout",
@@ -1963,6 +2028,7 @@
       "name": "Victreebel"
     }]
   }, {
+    "desc" : "When hungry, it swallows anything that moves. Its hapless prey is dissolved by strong acids.",
     "id": 70,
     "num": "070",
     "name": "Weepinbell",
@@ -1995,6 +2061,7 @@
       "name": "Victreebel"
     }]
   }, {
+    "desc" : "Lures prey with the sweet aroma of honey. Swallowed whole, the prey is dissolved in a day, bones and all.",
     "id": 71,
     "num": "071",
     "name": "Victreebel",
@@ -2025,6 +2092,7 @@
       "name": "Weepinbell"
     }]
   }, {
+    "desc" : "Tentacool is not a particularly strong swimmer. It drifts across the surface of shallow seas as it searches for prey.",
     "id": 72,
     "num": "072",
     "name": "Tentacool",
@@ -2052,6 +2120,7 @@
       "name": "Tentacruel"
     }]
   }, {
+    "desc" : "When the red orbs on Tentacruel’s head glow brightly, watch out. The Pokémon is about to fire off a burst of ultrasonic waves.",
     "id": 73,
     "num": "073",
     "name": "Tentacruel",
@@ -2078,6 +2147,7 @@
       "name": "Tentacool"
     }]
   }, {
+    "desc" : "Commonly found near mountain trails and the like. If you step on one by accident, it gets angry.",
     "id": 74,
     "num": "074",
     "name": "Geodude",
@@ -2114,6 +2184,7 @@
       "name": "Golem"
     }]
   }, {
+    "desc" : "Often seen rolling down mountain trails. Obstacles are just things to roll straight over, not avoid.",
     "id": 75,
     "num": "075",
     "name": "Graveler",
@@ -2151,6 +2222,7 @@
       "name": "Golem"
     }]
   }, {
+    "desc" : "Once it sheds its skin, its body turns tender and whitish. Its hide hardens when it’s exposed to air.",
     "id": 76,
     "num": "076",
     "name": "Golem",
@@ -2183,6 +2255,7 @@
       "name": "Graveler"
     }]
   }, {
+    "desc" : "It can’t run properly when it’s newly born. As it races around with others of its kind, its legs grow stronger.",
     "id": 77,
     "num": "077",
     "name": "Ponyta",
@@ -2212,6 +2285,7 @@
       "name": "Rapidash"
     }]
   }, {
+    "desc" : "This Pokémon can be seen galloping through fields at speeds of up to 150 mph, its fiery mane fluttering in the wind.",
     "id": 78,
     "num": "078",
     "name": "Rapidash",
@@ -2237,6 +2311,7 @@
       "name": "Ponyta"
     }]
   }, {
+    "desc" : "Slow-witted and oblivious, this Pokémon won’t feel any pain if its tail gets eaten. It won’t notice when its tail grows back, either.",
     "id": 79,
     "num": "079",
     "name": "Slowpoke",
@@ -2266,6 +2341,7 @@
       "name": "Slowbro"
     }]
   }, {
+    "desc" : "Slowpoke became Slowbro when a Shellder bit on to its tail. Sweet flavors seeping from the tail make the Shellder feel as if its life is a dream.",
     "id": 80,
     "num": "080",
     "name": "Slowbro",
@@ -2294,6 +2370,7 @@
       "name": "Slowpoke"
     }]
   }, {
+    "desc" : "At times, Magnemite runs out of electricity and ends up on the ground. If you give batteries to a grounded Magnemite, it’ll start moving again.",
     "id": 81,
     "num": "081",
     "name": "Magnemite",
@@ -2323,6 +2400,7 @@
       "name": "Magneton"
     }]
   }, {
+    "desc" : "This Pokémon is three Magnemite that have linked together. Magneton sends out powerful radio waves to study its surroundings.",
     "id": 82,
     "num": "082",
     "name": "Magneton",
@@ -2348,6 +2426,7 @@
       "name": "Magnemite"
     }]
   }, {
+    "desc" : "The stalk this Pokémon carries in its wings serves as a sword to cut down opponents. In a dire situation, the stalk can also serve as food.",
     "id": 83,
     "num": "083",
     "name": "Farfetch'd",
@@ -2369,6 +2448,7 @@
       "Rock"
     ]
   }, {
+    "desc" : "Its short wings make flying difficult. Instead, this Pokémon runs at high speed on developed legs.",
     "id": 84,
     "num": "084",
     "name": "Doduo",
@@ -2398,6 +2478,7 @@
       "name": "Dodrio"
     }]
   }, {
+    "desc" : "One of Doduo’s two heads splits to form a unique species. It runs close to 40 mph in prairies.",
     "id": 85,
     "num": "085",
     "name": "Dodrio",
@@ -2423,6 +2504,7 @@
       "name": "Doduo"
     }]
   }, {
+    "desc" : "Loves freezing-cold conditions. Relishes swimming in a frigid climate of around 14 degrees Fahrenheit.",
     "id": 86,
     "num": "086",
     "name": "Seel",
@@ -2451,6 +2533,7 @@
       "name": "Dewgong"
     }]
   }, {
+    "desc" : "Its entire body is a snowy white. Unharmed by even intense cold, it swims powerfully in icy waters.",
     "id": 87,
     "num": "087",
     "name": "Dewgong",
@@ -2478,6 +2561,7 @@
       "name": "Seel"
     }]
   }, {
+    "desc" : "Made of congealed sludge. It smells too putrid to touch. Even weeds won’t grow in its path.",
     "id": 88,
     "num": "088",
     "name": "Grimer",
@@ -2503,6 +2587,7 @@
       "name": "Muk"
     }]
   }, {
+    "desc" : "Smells so awful, it can cause fainting. Through degeneration of its nose, it lost its sense of smell.",
     "id": 89,
     "num": "089",
     "name": "Muk",
@@ -2527,6 +2612,7 @@
       "name": "Grimer"
     }]
   }, {
+    "desc" : "It swims facing backward by opening and closing its two-piece shell. It is surprisingly fast.",
     "id": 90,
     "num": "090",
     "name": "Shellder",
@@ -2552,6 +2638,7 @@
       "name": "Cloyster"
     }]
   }, {
+    "desc" : "Its shell is extremely hard. It cannot be shattered, even with a bomb. The shell opens only when it is attacking.",
     "id": 91,
     "num": "091",
     "name": "Cloyster",
@@ -2579,6 +2666,7 @@
       "name": "Shellder"
     }]
   }, {
+    "desc" : "Born from gases, anyone would faint if engulfed by its gaseous body, which contains poison.",
     "id": 92,
     "num": "092",
     "name": "Gastly",
@@ -2610,6 +2698,7 @@
       "name": "Gengar"
     }]
   }, {
+    "desc" : "Its tongue is made of gas. If licked, its victim starts shaking constantly until death eventually comes.",
     "id": 93,
     "num": "093",
     "name": "Haunter",
@@ -2645,6 +2734,7 @@
       "name": "Gengar"
     }]
   }, {
+    "desc" : "On the night of a full moon, if shadows move on their own and laugh, it must be Gengar’s doing.",
     "id": 94,
     "num": "094",
     "name": "Gengar",
@@ -2675,6 +2765,7 @@
       "name": "Haunter"
     }]
   }, {
+    "desc" : "As it digs through the ground, it absorbs many hard objects. This is what makes its body so solid.",
     "id": 95,
     "num": "095",
     "name": "Onix",
@@ -2700,6 +2791,7 @@
       "Steel"
     ]
   }, {
+    "desc" : "If you sleep by it all the time, it will sometimes show you dreams it had eaten in the past.",
     "id": 96,
     "num": "096",
     "name": "Drowzee",
@@ -2729,6 +2821,7 @@
       "name": "Hypno"
     }]
   }, {
+    "desc" : "Avoid eye contact if you come across one. It will try to put you to sleep by using its pendulum.",
     "id": 97,
     "num": "097",
     "name": "Hypno",
@@ -2754,6 +2847,7 @@
       "name": "Drowzee"
     }]
   }, {
+    "desc" : "It can be found near the sea. The large pincers grow back if they are torn out of their sockets.",
     "id": 98,
     "num": "098",
     "name": "Krabby",
@@ -2782,6 +2876,7 @@
       "name": "Kingler"
     }]
   }, {
+    "desc" : "Its large and hard pincer has 10,000-horsepower strength. However, being so big, it is unwieldy to move.",
     "id": 99,
     "num": "099",
     "name": "Kingler",
@@ -2806,6 +2901,7 @@
       "name": "Krabby"
     }]
   }, {
+    "desc" : "It is said to camouflage itself as a Poké Ball. It will self-destruct with very little stimulus.",
     "id": 100,
     "num": "100",
     "name": "Voltorb",
@@ -2833,6 +2929,7 @@
       "name": "Electrode"
     }]
   }, {
+    "desc" : "Stores electrical energy inside its body. Even the slightest shock could trigger a huge explosion.",
     "id": 101,
     "num": "101",
     "name": "Electrode",
@@ -2856,6 +2953,7 @@
       "name": "Voltorb"
     }]
   }, {
+    "desc" : "Though it may look like it’s just a bunch of eggs, it’s a proper Pokémon. Exeggcute communicates with others of its kind via telepathy, apparently.",
     "id": 102,
     "num": "102",
     "name": "Exeggcute",
@@ -2890,6 +2988,7 @@
       "name": "Exeggutor"
     }]
   }, {
+    "desc" : "Each of Exeggutor’s three heads is thinking different thoughts. The three don’t seem to be very interested in one another.",
     "id": 103,
     "num": "103",
     "name": "Exeggutor",
@@ -2920,6 +3019,7 @@
       "name": "Exeggcute"
     }]
   }, {
+    "desc" : "When the memory of its departed mother brings it to tears, its cries echo mournfully within the skull it wears on its head.",
     "id": 104,
     "num": "104",
     "name": "Cubone",
@@ -2946,6 +3046,7 @@
       "name": "Marowak"
     }]
   }, {
+    "desc" : "This Pokémon overcame its sorrow to evolve a sturdy new body. Marowak faces its opponents bravely, using a bone as a weapon.",
     "id": 105,
     "num": "105",
     "name": "Marowak",
@@ -2971,6 +3072,7 @@
       "name": "Cubone"
     }]
   }, {
+    "desc" : "This amazing Pokémon has an awesome sense of balance. It can kick in succession from any position.",
     "id": 106,
     "num": "106",
     "name": "Hitmonlee",
@@ -2992,6 +3094,7 @@
       "Fairy"
     ]
   }, {
+    "desc" : "Its punches slice the air. They are launched at such high speed, even a slight graze could cause a burn.",
     "id": 107,
     "num": "107",
     "name": "Hitmonchan",
@@ -3013,6 +3116,7 @@
       "Fairy"
     ]
   }, {
+    "desc" : "If this Pokémon’s sticky saliva gets on you and you don’t clean it off, an intense itch will set in. The itch won’t go away, either.",
     "id": 108,
     "num": "108",
     "name": "Lickitung",
@@ -3032,6 +3136,7 @@
       "Fighting"
     ]
   }, {
+    "desc" : "Its body is full of poisonous gas. It floats into garbage dumps, seeking out the fumes of raw, rotting trash.",
     "id": 109,
     "num": "109",
     "name": "Koffing",
@@ -3057,6 +3162,7 @@
       "name": "Weezing"
     }]
   }, {
+    "desc" : "It mixes gases between its two bodies. It’s said that these Pokémon were seen all over the Galar region back in the day.",
     "id": 110,
     "num": "110",
     "name": "Weezing",
@@ -3081,6 +3187,7 @@
       "name": "Koffing"
     }]
   }, {
+    "desc" : "Strong, but not too bright, this Pokémon can shatter even a skyscraper with its charging tackles.",
     "id": 111,
     "num": "111",
     "name": "Rhyhorn",
@@ -3111,6 +3218,7 @@
       "name": "Rhydon"
     }]
   }, {
+    "desc" : "It begins walking on its hind legs after evolution. It can punch holes through boulders with its horn.",
     "id": 112,
     "num": "112",
     "name": "Rhydon",
@@ -3140,6 +3248,7 @@
       "name": "Rhyhorn"
     }]
   }, {
+    "desc" : "The egg Chansey carries is not only delicious but also packed with nutrition. It’s used as a high-class cooking ingredient.",
     "id": 113,
     "num": "113",
     "name": "Chansey",
@@ -3159,6 +3268,7 @@
       "Fighting"
     ]
   }, {
+    "desc" : "Hidden beneath a tangle of vines that grows nonstop even if the vines are torn off, this Pokémon’s true appearance remains a mystery.",
     "id": 114,
     "num": "114",
     "name": "Tangela",
@@ -3182,6 +3292,7 @@
       "Bug"
     ]
   }, {
+    "desc" : "Although it’s carrying its baby in a pouch on its belly, Kangaskhan is swift on its feet. It intimidates its opponents with quick jabs.",
     "id": 115,
     "num": "115",
     "name": "Kangaskhan",
@@ -3201,6 +3312,7 @@
       "Fighting"
     ]
   }, {
+    "desc" : "Horsea makes its home in oceans with gentle currents. If this Pokémon is under attack, it spits out pitch-black ink and escapes.",
     "id": 116,
     "num": "116",
     "name": "Horsea",
@@ -3226,6 +3338,7 @@
       "name": "Seadra"
     }]
   }, {
+    "desc" : "It’s the males that raise the offspring. While Seadra are raising young, the spines on their backs secrete thicker and stronger poison.",
     "id": 117,
     "num": "117",
     "name": "Seadra",
@@ -3250,6 +3363,7 @@
       "name": "Horsea"
     }]
   }, {
+    "desc" : "Its dorsal, pectoral, and tail fins wave elegantly in water. That is why it is known as the Water Dancer.",
     "id": 118,
     "num": "118",
     "name": "Goldeen",
@@ -3278,6 +3392,7 @@
       "name": "Seaking"
     }]
   }, {
+    "desc" : "In autumn, its body becomes more fatty in preparing to propose to a mate. It takes on beautiful colors.",
     "id": 119,
     "num": "119",
     "name": "Seaking",
@@ -3302,6 +3417,7 @@
       "name": "Goldeen"
     }]
   }, {
+    "desc" : "If you visit a beach at the end of summer, you’ll be able to see groups of Staryu lighting up in a steady rhythm.",
     "id": 120,
     "num": "120",
     "name": "Staryu",
@@ -3330,6 +3446,7 @@
       "name": "Starmie"
     }]
   }, {
+    "desc" : "This Pokémon has an organ known as its core. The organ glows in seven colors when Starmie is unleashing its potent psychic powers.\n\n",
     "id": 121,
     "num": "121",
     "name": "Starmie",
@@ -3358,6 +3475,7 @@
       "name": "Staryu"
     }]
   }, {
+    "desc" : "The broadness of its hands may be no coincidence—many scientists believe its palms became enlarged specifically for pantomiming.",
     "id": 122,
     "num": "122",
     "name": "Mr. Mime",
@@ -3379,6 +3497,7 @@
       "Dark"
     ]
   }, {
+    "desc" : "As Scyther fights more and more battles, its scythes become sharper and sharper. With a single slice, Scyther can fell a massive tree.",
     "id": 123,
     "num": "123",
     "name": "Scyther",
@@ -3403,6 +3522,7 @@
       "Rock"
     ]
   }, {
+    "desc" : "In certain parts of Galar, Jynx was once feared and worshiped as the Queen of Ice.",
     "id": 124,
     "num": "124",
     "name": "Jynx",
@@ -3428,6 +3548,7 @@
       "Steel"
     ]
   }, {
+    "desc" : "Many power plants keep Ground-type Pokémon around as a defense against Electabuzz that come seeking electricity.",
     "id": 125,
     "num": "125",
     "name": "Electabuzz",
@@ -3447,6 +3568,7 @@
       "Ground"
     ]
   }, {
+    "desc" : "Magmar dispatches its prey with fire. But it regrets this habit once it realizes that it has burned its intended prey to a charred crisp.",
     "id": 126,
     "num": "126",
     "name": "Magmar",
@@ -3468,6 +3590,7 @@
       "Rock"
     ]
   }, {
+    "desc" : "These Pokémon judge one another based on pincers. Thicker, more impressive pincers make for more popularity with the opposite gender.",
     "id": 127,
     "num": "127",
     "name": "Pinsir",
@@ -3489,6 +3612,7 @@
       "Rock"
     ]
   }, {
+    "desc" : "When Tauros begins whipping itself with its tails, it’s a warning that the Pokémon is about to charge with astounding speed.",
     "id": 128,
     "num": "128",
     "name": "Tauros",
@@ -3508,6 +3632,7 @@
       "Fighting"
     ]
   }, {
+    "desc" : "It is virtually worthless in terms of both power and speed. It is the most weak and pathetic Pokémon in the world.",
     "id": 129,
     "num": "129",
     "name": "Magikarp",
@@ -3536,6 +3661,7 @@
       "name": "Gyarados"
     }]
   }, {
+    "desc" : "It has an extremely aggressive nature. The Hyper Beam it shoots from its mouth totally incinerates all targets.",
     "id": 130,
     "num": "130",
     "name": "Gyarados",
@@ -3561,6 +3687,7 @@
       "name": "Magikarp"
     }]
   }, {
+    "desc" : "A smart and kindhearted Pokémon, it glides across the surface of the sea while its beautiful song echoes around it.",
     "id": 131,
     "num": "131",
     "name": "Lapras",
@@ -3584,6 +3711,7 @@
       "Rock"
     ]
   }, {
+    "desc" : "It can reconstitute its entire cellular structure to change into what it sees, but it returns to normal when it relaxes.",
     "id": 132,
     "num": "132",
     "name": "Ditto",
@@ -3603,6 +3731,7 @@
       "Fighting"
     ]
   }, {
+    "desc" : "It has the ability to alter the composition of its body to suit its surrounding environment.",
     "id": 133,
     "num": "133",
     "name": "Eevee",
@@ -3636,6 +3765,7 @@
       "name": "Flareon"
     }]
   }, {
+    "desc" : "When Vaporeon’s fins begin to vibrate, it is a sign that rain will come within a few hours.",
     "id": 134,
     "num": "134",
     "name": "Vaporeon",
@@ -3660,6 +3790,7 @@
       "name": "Eevee"
     }]
   }, {
+    "desc" : "If it is angered or startled, the fur all over its body bristles like sharp needles that pierce foes.",
     "id": 135,
     "num": "135",
     "name": "Jolteon",
@@ -3683,6 +3814,7 @@
       "name": "Eevee"
     }]
   }, {
+    "desc" : "Once it has stored up enough heat, this Pokémon’s body temperature can reach up to 1,700 degrees Fahrenheit.",
     "id": 136,
     "num": "136",
     "name": "Flareon",
@@ -3708,6 +3840,7 @@
       "name": "Eevee"
     }]
   }, {
+    "desc" : "State-of-the-art technology was used to create Porygon. It was the first artificial Pokémon to be created via computer programming.",
     "id": 137,
     "num": "137",
     "name": "Porygon",
@@ -3727,6 +3860,7 @@
       "Fighting"
     ]
   }, {
+    "desc" : "Because some Omanyte manage to escape after being restored or are released into the wild by people, this species is becoming a problem.",
     "id": 138,
     "num": "138",
     "name": "Omanyte",
@@ -3755,6 +3889,7 @@
       "name": "Omastar"
     }]
   }, {
+    "desc" : "Weighed down by a large and heavy shell, Omastar couldn’t move very fast. Some say it went extinct because it was unable to catch food.",
     "id": 139,
     "num": "139",
     "name": "Omastar",
@@ -3782,6 +3917,7 @@
       "name": "Omanyte"
     }]
   }, {
+    "desc" : "This species is almost entirely extinct. Kabuto molt every three days, making their shells harder and harder.",
     "id": 140,
     "num": "140",
     "name": "Kabuto",
@@ -3813,6 +3949,7 @@
       "name": "Kabutops"
     }]
   }, {
+    "desc" : "Kabutops slices its prey apart and sucks out the fluids. The discarded body parts become food for other Pokémon.",
     "id": 141,
     "num": "141",
     "name": "Kabutops",
@@ -3840,6 +3977,7 @@
       "name": "Kabuto"
     }]
   }, {
+    "desc" : "This is a ferocious Pokémon from ancient times. Apparently even modern technology is incapable of producing a perfectly restored specimen.",
     "id": 142,
     "num": "142",
     "name": "Aerodactyl",
@@ -3864,6 +4002,7 @@
       "Steel"
     ]
   }, {
+    "desc" : "It is not satisfied unless it eats over 880 pounds of food every day. When it is done eating, it goes promptly to sleep.",
     "id": 143,
     "num": "143",
     "name": "Snorlax",
@@ -3883,6 +4022,7 @@
       "Fighting"
     ]
   }, {
+    "desc" : "It’s said that this Pokémon’s beautiful blue wings are made of ice. Articuno flies over snowy mountains, its long tail fluttering along behind it.",
     "id": 144,
     "num": "144",
     "name": "Articuno",
@@ -3906,6 +4046,7 @@
       "Steel"
     ]
   }, {
+    "desc" : "This Pokémon has complete control over electricity. There are tales of Zapdos nesting in the dark depths of pitch-black thunderclouds.",
     "id": 145,
     "num": "145",
     "name": "Zapdos",
@@ -3927,6 +4068,7 @@
       "Rock"
     ]
   }, {
+    "desc" : "It’s one of the legendary bird Pokémon. When Moltres flaps its flaming wings, they glimmer with a dazzling red glow.",
     "id": 146,
     "num": "146",
     "name": "Moltres",
@@ -3949,6 +4091,7 @@
       "Rock"
     ]
   }, {
+    "desc" : "Dratini dwells near bodies of rapidly flowing water, such as the plunge pools of waterfalls. As it grows, Dratini will shed its skin many times.",
     "id": 147,
     "num": "147",
     "name": "Dratini",
@@ -3981,6 +4124,7 @@
       "name": "Dragonite"
     }]
   }, {
+    "desc" : "This Pokémon lives in pristine oceans and lakes. It can control the weather, and it uses this power to fly into the sky, riding on the wind.",
     "id": 148,
     "num": "148",
     "name": "Dragonair",
@@ -4011,6 +4155,7 @@
       "name": "Dragonite"
     }]
   }, {
+    "desc" : "It’s a kindhearted Pokémon. If it spots a drowning person or Pokémon, Dragonite simply must help them.",
     "id": 149,
     "num": "149",
     "name": "Dragonite",
@@ -4041,6 +4186,7 @@
       "name": "Dragonair"
     }]
   }, {
+    "desc" : "Its DNA is almost the same as Mew’s. However, its size and disposition are vastly different.",
     "id": 150,
     "num": "150",
     "name": "Mewtwo",
@@ -4062,6 +4208,7 @@
       "Dark"
     ]
   }, {
+    "desc" : "When viewed through a microscope, this Pokémon’s short, fine, delicate hair can be seen.",
     "id": 151,
     "num": "151",
     "name": "Mew",

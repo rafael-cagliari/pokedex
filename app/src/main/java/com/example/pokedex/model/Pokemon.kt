@@ -5,7 +5,12 @@ import com.google.gson.annotations.SerializedName
 
 data class Pokemon(
 
-@SerializedName("id")
+ @SerializedName("desc")
+ @Expose
+
+ val desc: String? = null,
+
+ @SerializedName("id")
 @Expose
 
  val id: Int? = null,

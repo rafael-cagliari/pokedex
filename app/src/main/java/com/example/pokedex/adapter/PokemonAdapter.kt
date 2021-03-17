@@ -86,6 +86,7 @@ class PokemonAdapter(private val pokemonList: List<Pokemon>) :
         holder.pokemonImage.setOnClickListener {
             val action =
                 PokemonListFragmentDirections.actionPokemonListFragmentToPokemonDetailsFragment(
+                    description = pokemon.desc!!,
                     name = pokemon.name!!,
                     nameLowerCase = pokemon.name.toString().toLowerCase(),
                     number = pokemon.num!!,

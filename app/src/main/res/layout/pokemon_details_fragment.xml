@@ -86,15 +86,19 @@
                     android:textColor="#0C0C0C"
                     tools:text="Height"></TextView>
 
-                <TextView
-                    style="@style/PokeDetailsTitle"
-                    android:text="Candy"></TextView>
+
 
                 <TextView
-                    android:id="@+id/details_candy"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="3.5dp"
+                    android:id="@+id/description"
                     style="@style/PokeDetailsFilling"
                     android:text=""
+                    android:textStyle="italic"
+                    android:textSize="16sp"
                     android:textColor="#0C0C0C"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="4dp"
                     tools:text="Candy"></TextView>
             </LinearLayout>
         </LinearLayout>
