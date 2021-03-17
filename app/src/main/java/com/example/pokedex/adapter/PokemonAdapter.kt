@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Filter
+import android.widget.Filterable
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.RequiresApi
@@ -23,18 +24,20 @@ import kotlin.collections.ArrayList
 
 class PokemonAdapter(private val pokemonList: List<Pokemon>) :
 
-    RecyclerView.Adapter<PokemonAdapter.ItemViewHolder>() {
+    RecyclerView.Adapter<PokemonAdapter.ItemViewHolder>(), Filterable {
     var pokemonFilterList = pokemonList.toMutableList()
-    fun getFilter(): Filter{
-        return object : Filter(){
+    override fun getFilter(): Filter {
+        return object : Filter() {
             override fun performFiltering(constraint: CharSequence?): FilterResults {
                 val charSearch = constraint.toString()
-                if (charSearch.isEmpty()){
+                if (charSearch.isEmpty()) {
                     pokemonFilterList = pokemonList.toMutableList()
                 } else {
-                    val resultList = pokemonList.toMutableList()
+                    val resultList = ArrayList<Pokemon>()
                     for (row in pokemonList) {
-                        if (row.name?.toLowerCase(Locale.ROOT)?.contains(charSearch.toLowerCase(Locale.ROOT)) == true) {
+                        if (row.name?.toLowerCase(Locale.ROOT)
+                                ?.contains(charSearch.toLowerCase(Locale.ROOT)) == true
+                        ) {
                             resultList.add(row)
                         }
                     }
@@ -42,6 +45,7 @@ class PokemonAdapter(private val pokemonList: List<Pokemon>) :
                 }
                 val filterResults = FilterResults()
                 filterResults.values = pokemonFilterList
+
                 return filterResults
             }
 

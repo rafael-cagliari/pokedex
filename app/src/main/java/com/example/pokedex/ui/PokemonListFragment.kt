@@ -38,18 +38,19 @@ class PokemonListFragment : Fragment() {
         val pokemonData = Datasource().gsonFromJson(requireContext(), "response.json")
         recyclerView = binding.recyclerView
         recyclerView.layoutManager = StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL)
-        recyclerView.adapter = PokemonAdapter(pokemonData.pokemons ?: listOf())
+        val adapter = PokemonAdapter(pokemonData.pokemons ?: listOf())
+        recyclerView.adapter = adapter
 
-        binding.pokemonSearch.setOnQueryTextListener(object:SearchView.OnQueryTextListener,
+        binding.pokemonSearch.setOnQueryTextListener(object : SearchView.OnQueryTextListener,
             androidx.appcompat.widget.SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
-               return false
+                return false
             }
 
             override fun onQueryTextChange(newText: String?): Boolean {
-                val adpFilter = PokemonAdapter(pokemonData.pokemons ?: listOf()).getFilter()
-                adpFilter.filter(newText)
+                adapter.filter.filter(newText)
                 return false
+
             }
 
         })
