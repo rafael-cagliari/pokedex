@@ -2,7 +2,6 @@ package com.example.pokedex.adapter
 
 import android.graphics.drawable.Drawable
 import android.os.Build
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -97,7 +96,8 @@ class PokemonAdapter(private val pokemonList: List<Pokemon>) :
                     spawnTime = pokemon.spawnTime!!,
                     spawnChance = pokemon.spawnChance.toString(),
                     type = pokemon.type.toTypedArray(),
-                    weaknesses = pokemon.weaknesses!!.toTypedArray()
+                    weaknesses = pokemon.weaknesses!!.toTypedArray(),
+                    next_evolution = pokemon.nextEvolution
                 )
             holder.itemView.findNavController().navigate(action)
         }
