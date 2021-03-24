@@ -6,7 +6,7 @@
     <fragment
         android:id="@+id/pokemonListFragment"
         android:name="com.example.pokedex.ui.PokemonListFragment"
-        android:label="PokemonListFragment" >
+        android:label="Pokedex" >
         <action
             android:id="@+id/action_pokemonListFragment_to_pokemonDetailsFragment"
             app:destination="@id/pokemonDetailsFragment" >
@@ -18,7 +18,7 @@
     <fragment
         android:id="@+id/pokemonDetailsFragment"
         android:name="com.example.pokedex.ui.PokemonDetailsFragment"
-        android:label="PokemonDetailsFragment" >
+        android:label="Pokemon Details" >
         <argument
             android:name="name_lower_case"
             app:argType="string" />

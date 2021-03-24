@@ -66,25 +66,25 @@
                 <TextView
                     style="@style/PokeDetailsTitle"
                     android:layout_marginTop="45dp"
-                    android:text="Weight"></TextView>
+                    android:text="Weight"/>
 
                 <TextView
                     android:id="@+id/details_weight"
                     style="@style/PokeDetailsFilling"
                     android:text=""
                     android:textColor="#0C0C0C"
-                    tools:text="Weight"></TextView>
+                    tools:text="Weight"/>
 
                 <TextView
                     style="@style/PokeDetailsTitle"
-                    android:text="Height"></TextView>
+                    android:text="Height"/>
 
                 <TextView
                     android:id="@+id/details_height"
                     style="@style/PokeDetailsFilling"
                     android:text=""
                     android:textColor="#0C0C0C"
-                    tools:text="Height"></TextView>
+                    tools:text="Height"/>
 
 
 
@@ -98,8 +98,7 @@
                     android:textSize="16sp"
                     android:textColor="#0C0C0C"
                     android:paddingLeft="0dp"
-                    android:paddingRight="4dp"
-                    tools:text="Candy"></TextView>
+                    android:paddingRight="4dp"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -113,7 +112,7 @@
         <TextView
             style="@style/PokeDetailsTitle"
             android:layout_marginTop="15dp"
-            android:text="Type"></TextView>
+            android:text="Type"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -127,14 +126,14 @@
                 android:layout_marginLeft="40dp"
                 android:layout_marginRight="10dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/flying"></ImageView>
+                android:src="@drawable/flying"/>
 
             <ImageView
                 android:id="@+id/type_detail2"
                 android:layout_width="45dp"
                 android:layout_height="14dp"
                 android:layout_marginRight="10dp"
-                android:scaleType="fitXY"></ImageView>
+                android:scaleType="fitXY"/>
         </LinearLayout>
 
         <LinearLayout
@@ -147,7 +146,7 @@
         <TextView
             style="@style/PokeDetailsTitle"
             android:layout_marginTop="15dp"
-            android:text="Weaknesses"></TextView>
+            android:text="Weaknesses"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -161,121 +160,116 @@
                 android:layout_marginLeft="40dp"
                 android:layout_marginRight="10dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/flying"></ImageView>
+                android:src="@drawable/flying"/>
 
             <ImageView
                 android:id="@+id/weakness_detail2"
                 android:layout_width="45dp"
                 android:layout_height="14dp"
                 android:layout_marginRight="10dp"
-                android:scaleType="fitXY"></ImageView>
+                android:scaleType="fitXY"/>
 
             <ImageView
                 android:id="@+id/weakness_detail3"
                 android:layout_width="45dp"
                 android:layout_height="14dp"
                 android:layout_marginRight="10dp"
-                android:scaleType="fitXY"></ImageView>
+                android:scaleType="fitXY"/>
 
             <ImageView
                 android:id="@+id/weakness_detail4"
                 android:layout_width="45dp"
                 android:layout_height="14dp"
                 android:layout_marginRight="10dp"
-                android:scaleType="fitXY"></ImageView>
+                android:scaleType="fitXY"/>
 
             <ImageView
                 android:id="@+id/weakness_detail5"
                 android:layout_width="45dp"
                 android:layout_height="14dp"
                 android:layout_marginRight="10dp"
-                android:scaleType="fitXY"></ImageView>
+                android:scaleType="fitXY"/>
 
             <ImageView
                 android:id="@+id/weakness_detail6"
                 android:layout_width="45dp"
                 android:layout_height="14dp"
                 android:layout_marginRight="10dp"
-                android:scaleType="fitXY"></ImageView>
+                android:scaleType="fitXY"/>
 
             <ImageView
                 android:id="@+id/weakness_detail7"
                 android:layout_width="45dp"
                 android:layout_height="14dp"
                 android:layout_marginRight="10dp"
-                android:scaleType="fitXY"></ImageView>
+                android:scaleType="fitXY"/>
 
         </LinearLayout>
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_gravity="center"
-            >
+            android:layout_gravity="center">
 
-            <LinearLayout
+            <ImageView
+                android:id="@+id/evo_figure1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginRight="12dp">
-                <ImageView
-                    android:id="@+id/evo_figure1"
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
-                    android:scaleType="fitEnd"
-                    tools:ignore="MissingConstraints" />
-                <TextView
-                    android:id="@+id/evo1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:text="EVOLUÇÃO 1">
+                android:scaleType="fitEnd"
+                app:layout_constraintEnd_toEndOf="@+id/evo1"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
 
-                </TextView>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_marginRight="12dp"
+            <TextView
+                android:id="@+id/evo1"
+                android:layout_marginRight="25dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <ImageView
-                    android:id="@+id/evo_figure2"
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
-                    android:scaleType="fitEnd"
-                    tools:ignore="MissingConstraints" />
-                <TextView
-                    android:id="@+id/evo2"
-                    android:text=""
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:text="EVOLUÇÃO 2">
+                app:layout_constraintTop_toBottomOf="@+id/evo_figure1"
+                tools:text="EVOLUÇÃO 1"
+                tools:ignore="MissingConstraints" />
 
-                </TextView>
-
-            </LinearLayout>
-            <LinearLayout
+            <ImageView
+                android:id="@+id/evo_figure2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <ImageView
-                    android:id="@+id/evo_figure3"
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
-                    android:scaleType="fitEnd"
-                    tools:ignore="MissingConstraints" />
-                <TextView
-                    android:text=""
-                    android:id="@+id/evo3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:text="EVOLUÇÃO 3">
+                android:scaleType="fitEnd"
+                app:layout_constraintEnd_toEndOf="@+id/evo2"
+                app:layout_constraintStart_toStartOf="@+id/evo2"
+                tools:ignore="MissingConstraints" />
 
-                </TextView>
+            <TextView
+                android:id="@+id/evo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text=""
+                app:layout_constraintStart_toEndOf="@+id/evo1"
+                app:layout_constraintTop_toBottomOf="@+id/evo_figure2"
+                tools:text="EVOLUÇÃO 2" />
 
-            </LinearLayout>
-        </LinearLayout>
+
+            <ImageView
+                android:id="@+id/evo_figure3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitEnd"
+                app:layout_constraintEnd_toEndOf="@+id/evo3"
+                app:layout_constraintStart_toStartOf="@+id/evo3"
+                tools:ignore="MissingConstraints"/>
+
+            <TextView
+                android:id="@+id/evo3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text=""
+                app:layout_constraintStart_toEndOf="@+id/evo2"
+                app:layout_constraintTop_toBottomOf="@+id/evo_figure3"
+                tools:text="EVOLUÇÃO 3" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 
 

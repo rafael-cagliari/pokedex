@@ -85,7 +85,7 @@ class PokemonDetailsFragment : Fragment() {
         // pokemon is and modify "evolution" section
 
         Log.d("nextevolution checker", args.nextEvolution?.get(2).toString())
-        if (args.nextEvolution?.get(2)!! != "null"){
+        if (args.nextEvolution?.get(2)!! != "null") {
             binding.evo1.text = args.name
             binding.evo2.text = args.nextEvolution?.get(0)
             binding.evo3.text = args.nextEvolution?.get(2)
@@ -93,7 +93,7 @@ class PokemonDetailsFragment : Fragment() {
             binding.evo1.text = args.prevEvolution?.get(0)
             binding.evo2.text = args.name
             binding.evo3.text = args.nextEvolution?.get(0)
-        } else if (args.prevEvolution?.get(2)!! != "null"){
+        } else if (args.prevEvolution?.get(2)!! != "null") {
             binding.evo1.text = args.prevEvolution?.get(0)
             binding.evo2.text = args.prevEvolution?.get(2)
             binding.evo3.text = args.name
@@ -102,8 +102,30 @@ class PokemonDetailsFragment : Fragment() {
             binding.evo2.text = args.nextEvolution?.get(0)
         } else if (args.prevEvolution?.get(1)!! != "null" && args.nextEvolution!!.get(0)!! == "null") {
             binding.evo1.text = args.prevEvolution?.get(0)
-            binding.evo2.text = args.name} else null
+            binding.evo2.text = args.name
+        } else null
 
+
+        // adds pokemon pictures to the evolution tree
+
+        Picasso.get()
+            .load("https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/${binding.evo1.text.toString().toLowerCase()}.png")
+            .resize(200, 200)
+            .into(binding.evoFigure1)
+
+        Picasso.get()
+            .load("https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/${binding.evo2.text.toString().toLowerCase()}.png")
+            .resize(200, 200)
+            .into(binding.evoFigure2)
+
+     if (binding.evo3.text.isNotBlank()){
+        Picasso.get()
+            .load("https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/${binding.evo3.text.toString().toLowerCase()}.png")
+            .resize(200, 200)
+            .into(binding.evoFigure3)} else null
+
+
+        // adds main pokemon picture
 
         Picasso.get()
             .load("https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/${args.nameLowerCase}.png")
@@ -115,18 +137,7 @@ class PokemonDetailsFragment : Fragment() {
             }
         }
 
-        Picasso.get()
-            .load("https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/${binding.evo1.text.toString().toLowerCase()}.png")
-            .into(binding.evoFigure1)
 
-        Picasso.get()
-            .load("https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/${binding.evo2.text.toString().toLowerCase()}.png")
-            .into(binding.evoFigure2)
-
-        if (binding.evo3.text.isNotBlank()){
-        Picasso.get()
-            .load("https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/${binding.evo3.text.toString().toLowerCase()}.png")
-            .into(binding.evoFigure3)} else null
         val url =
             "https://play.pokemonshowdown.com/audio/cries/${args.nameLowerCase}.mp3" // your URL here
         val mediaPlayer: MediaPlayer? = MediaPlayer().apply {
