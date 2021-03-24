@@ -114,6 +114,19 @@ class PokemonDetailsFragment : Fragment() {
                 clipToOutline = true
             }
         }
+
+        Picasso.get()
+            .load("https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/${binding.evo1.text.toString().toLowerCase()}.png")
+            .into(binding.evoFigure1)
+
+        Picasso.get()
+            .load("https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/${binding.evo2.text.toString().toLowerCase()}.png")
+            .into(binding.evoFigure2)
+
+        if (binding.evo3.text.isNotBlank()){
+        Picasso.get()
+            .load("https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/${binding.evo3.text.toString().toLowerCase()}.png")
+            .into(binding.evoFigure3)} else null
         val url =
             "https://play.pokemonshowdown.com/audio/cries/${args.nameLowerCase}.mp3" // your URL here
         val mediaPlayer: MediaPlayer? = MediaPlayer().apply {
