@@ -54,5 +54,16 @@
         <argument
             android:name="description"
             app:argType="string" />
+        <argument
+            android:name="nextEvolution"
+            app:argType="string[]"
+            app:nullable="true" />
+
+        <argument
+            android:name="prevEvolution"
+            app:argType="string[]"
+            app:nullable="true" />
+
+
     </fragment>
 </navigation>

@@ -97,7 +97,20 @@ class PokemonAdapter(private val pokemonList: List<Pokemon>) :
                     spawnChance = pokemon.spawnChance.toString(),
                     type = pokemon.type.toTypedArray(),
                     weaknesses = pokemon.weaknesses!!.toTypedArray(),
-                    next_evolution = pokemon.nextEvolution
+                    nextEvolution = arrayOf(
+                        pokemon.nextEvolution?.getOrNull(0)?.name.toString(),
+                        pokemon.nextEvolution?.getOrNull(0)?.num.toString(),
+                        pokemon.nextEvolution?.getOrNull(1)?.name.toString(),
+                        pokemon.nextEvolution?.getOrNull(1)?.num.toString()
+                    ),
+
+                    prevEvolution = arrayOf(
+                        pokemon.prevEvolution?.getOrNull(0)?.name.toString(),
+                        pokemon.prevEvolution?.getOrNull(0)?.num.toString(),
+                        pokemon.prevEvolution?.getOrNull(1)?.name.toString(),
+                        pokemon.prevEvolution?.getOrNull(1)?.num.toString()
+                    ),
+
                 )
             holder.itemView.findNavController().navigate(action)
         }

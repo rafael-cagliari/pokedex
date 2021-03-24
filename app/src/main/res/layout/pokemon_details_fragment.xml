@@ -204,6 +204,53 @@
                 android:layout_height="14dp"
                 android:layout_marginRight="10dp"
                 android:scaleType="fitXY"></ImageView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">]
+
+                <TextView
+                    android:id="@+id/evo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="EVOLUÇÃO 1">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">]
+                <TextView
+                    android:id="@+id/evo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="EVOLUÇÃO 2">
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">]
+                <TextView
+                    android:id="@+id/evo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="EVOLUÇÃO 3">
+
+                </TextView>
+
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 

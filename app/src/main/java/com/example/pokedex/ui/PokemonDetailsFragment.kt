@@ -6,6 +6,7 @@ import android.media.AudioManager
 import android.media.MediaPlayer
 import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -79,6 +80,29 @@ class PokemonDetailsFragment : Fragment() {
         if (args.weaknesses.size > 6) {
             binding.weaknessDetail7.setImageDrawable(typeSelector(args.weaknesses[6]))
         }
+
+        // if and else if testing 6 different conditions to establish in which evolution stage
+        // pokemon is and modify "evolution" section
+
+        Log.d("nextevolution checker", args.nextEvolution?.get(2).toString())
+        if (args.nextEvolution?.get(2)!! != "null"){
+            binding.evo1.text = args.name
+            binding.evo2.text = args.nextEvolution?.get(0)
+            binding.evo3.text = args.nextEvolution?.get(2)
+        } else if (args.nextEvolution?.get(0)!! != "null" && args.prevEvolution?.get(0)!! != "null") {
+            binding.evo1.text = args.prevEvolution?.get(0)
+            binding.evo2.text = args.name
+            binding.evo3.text = args.nextEvolution?.get(0)
+        } else if (args.prevEvolution?.get(2)!! != "null"){
+            binding.evo1.text = args.prevEvolution?.get(0)
+            binding.evo2.text = args.prevEvolution?.get(2)
+            binding.evo3.text = args.name
+        } else if (args.nextEvolution?.get(1)!! != "null" && args.prevEvolution!!.get(0)!! == "null") {
+            binding.evo1.text = args.name
+            binding.evo2.text = args.nextEvolution?.get(0)
+        } else if (args.prevEvolution?.get(1)!! != "null" && args.nextEvolution!!.get(0)!! == "null") {
+            binding.evo1.text = args.prevEvolution?.get(0)
+            binding.evo2.text = args.name} else null
 
 
         Picasso.get()
