@@ -34,18 +34,6 @@
         <argument
             android:name="wight"
             app:argType="string" />
-        <argument
-            android:name="egg"
-            app:argType="string" />
-        <argument
-            android:name="candy"
-            app:argType="string" />
-        <argument
-            android:name="spawn_chance"
-            app:argType="string" />
-        <argument
-            android:name="spawn_time"
-            app:argType="string" />
         <argument android:name="name"
             app:argType="string" />
         <argument

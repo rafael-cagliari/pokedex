@@ -87,14 +87,10 @@ class PokemonAdapter(private val pokemonList: List<Pokemon>) :
                 PokemonListFragmentDirections.actionPokemonListFragmentToPokemonDetailsFragment(
                     description = pokemon.desc!!,
                     name = pokemon.name!!,
-                    nameLowerCase = pokemon.name.toString().toLowerCase(),
+                    nameLowerCase = pokemon.name.toLowerCase(),
                     number = pokemon.num!!,
                     height = pokemon.height!!,
                     wight = pokemon.weight!!,
-                    egg = pokemon.egg!!,
-                    candy = pokemon.candy!!,
-                    spawnTime = pokemon.spawnTime!!,
-                    spawnChance = pokemon.spawnChance.toString(),
                     type = pokemon.type.toTypedArray(),
                     weaknesses = pokemon.weaknesses!!.toTypedArray(),
                     nextEvolution = arrayOf(

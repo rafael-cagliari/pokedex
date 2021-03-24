@@ -25,10 +25,10 @@
       "Psychic"
     ],
     "next_evolution": [{
-      "num": "002",
+      "num": "Level 16",
       "name": "Ivysaur"
     }, {
-      "num": "003",
+      "num": "Level 36",
       "name": "Venusaur"
     }]
   }, {
@@ -60,11 +60,11 @@
       "Psychic"
     ],
     "prev_evolution": [{
-      "num": "001",
+      "num": "Level 16",
       "name": "Bulbasaur"
     }],
     "next_evolution": [{
-      "num": "003",
+      "num": "Level 36",
       "name": "Venusaur"
     }]
   }, {
@@ -92,10 +92,10 @@
       "Psychic"
     ],
     "prev_evolution": [{
-      "num": "001",
+      "num": "Level 16",
       "name": "Bulbasaur"
     }, {
-      "num": "002",
+      "num": "Level 36",
       "name": "Ivysaur"
     }]
   }, {
@@ -122,10 +122,10 @@
       "Rock"
     ],
     "next_evolution": [{
-      "num": "005",
+      "num": "Level 16",
       "name": "Charmeleon"
     }, {
-      "num": "006",
+      "num": "Level 36",
       "name": "Charizard"
     }]
   }, {
@@ -152,11 +152,11 @@
       "Rock"
     ],
     "prev_evolution": [{
-      "num": "004",
+      "num": "Level 16",
       "name": "Charmander"
     }],
     "next_evolution": [{
-      "num": "006",
+      "num": "Level 36",
       "name": "Charizard"
     }]
   }, {
@@ -183,10 +183,10 @@
       "Rock"
     ],
     "prev_evolution": [{
-      "num": "004",
+      "num": "Level 16",
       "name": "Charmander"
     }, {
-      "num": "005",
+      "num": "Level 36",
       "name": "Charmeleon"
     }]
   }, {
@@ -212,10 +212,10 @@
       "Grass"
     ],
     "next_evolution": [{
-      "num": "008",
+      "num": "Level 16",
       "name": "Wartortle"
     }, {
-      "num": "009",
+      "num": "Level 36",
       "name": "Blastoise"
     }]
   }, {
@@ -241,11 +241,11 @@
       "Grass"
     ],
     "prev_evolution": [{
-      "num": "007",
+      "num": "Level 16",
       "name": "Squirtle"
     }],
     "next_evolution": [{
-      "num": "009",
+      "num": "Level 36",
       "name": "Blastoise"
     }]
   }, {
@@ -270,10 +270,10 @@
       "Grass"
     ],
     "prev_evolution": [{
-      "num": "007",
+      "num": "Level 16",
       "name": "Squirtle"
     }, {
-      "num": "008",
+      "num": "Level 32",
       "name": "Wartortle"
     }]
   }, {
@@ -300,10 +300,10 @@
       "Rock"
     ],
     "next_evolution": [{
-      "num": "011",
+      "num": "Level 7",
       "name": "Metapod"
     }, {
-      "num": "012",
+      "num": "Level 10",
       "name": "Butterfree"
     }]
   }, {
@@ -333,11 +333,11 @@
       "Rock"
     ],
     "prev_evolution": [{
-      "num": "010",
+      "num": "Level 7",
       "name": "Caterpie"
     }],
     "next_evolution": [{
-      "num": "012",
+      "num": "Level 10",
       "name": "Butterfree"
     }]
   }, {
@@ -366,10 +366,10 @@
       "Rock"
     ],
     "prev_evolution": [{
-      "num": "010",
+      "num": "Level 7",
       "name": "Caterpie"
     }, {
-      "num": "011",
+      "num": "Level 10",
       "name": "Metapod"
     }]
   }, {
@@ -401,10 +401,10 @@
       "Rock"
     ],
     "next_evolution": [{
-      "num": "014",
+      "num": "Level 7",
       "name": "Kakuna"
     }, {
-      "num": "015",
+      "num": "Level 10",
       "name": "Beedrill"
     }]
   }, {
@@ -436,11 +436,11 @@
       "Rock"
     ],
     "prev_evolution": [{
-      "num": "013",
+      "num": "Level 7",
       "name": "Weedle"
     }],
     "next_evolution": [{
-      "num": "015",
+      "num": "Level 10",
       "name": "Beedrill"
     }]
   }, {
@@ -468,10 +468,10 @@
       "Rock"
     ],
     "prev_evolution": [{
-      "num": "013",
+      "num": "Level 7",
       "name": "Weedle"
     }, {
-      "num": "014",
+      "num": "Level 10",
       "name": "Kakuna"
     }]
   }, {
@@ -501,10 +501,10 @@
       "Rock"
     ],
     "next_evolution": [{
-      "num": "017",
+      "num": "Level 18",
       "name": "Pidgeotto"
     }, {
-      "num": "018",
+      "num": "Level 36",
       "name": "Pidgeot"
     }]
   }, {
@@ -531,11 +531,11 @@
       "Rock"
     ],
     "prev_evolution": [{
-      "num": "016",
+      "num": "Level 18",
       "name": "Pidgey"
     }],
     "next_evolution": [{
-      "num": "018",
+      "num": "Level 36",
       "name": "Pidgeot"
     }]
   }, {
@@ -561,10 +561,10 @@
       "Rock"
     ],
     "prev_evolution": [{
-      "num": "016",
+      "num": "Level 18",
       "name": "Pidgey"
     }, {
-      "num": "017",
+      "num": "Level 36",
       "name": "Pidgeotto"
     }]
   }, {
@@ -592,7 +592,7 @@
       "Fighting"
     ],
     "next_evolution": [{
-      "num": "020",
+      "num": "Level 20",
       "name": "Raticate"
     }]
   }, {
@@ -616,7 +616,7 @@
       "Fighting"
     ],
     "prev_evolution": [{
-      "num": "019",
+      "num": "Level 20",
       "name": "Rattata"
     }]
   }, {
@@ -646,7 +646,7 @@
       "Rock"
     ],
     "next_evolution": [{
-      "num": "022",
+      "num": "Level 20",
       "name": "Fearow"
     }]
   }, {
@@ -672,7 +672,7 @@
       "Rock"
     ],
     "prev_evolution": [{
-      "num": "021",
+      "num": "Level 20",
       "name": "Spearow"
     }]
   }, {
@@ -701,7 +701,7 @@
       "Psychic"
     ],
     "next_evolution": [{
-      "num": "024",
+      "num": "Level 22",
       "name": "Arbok"
     }]
   }, {
@@ -726,7 +726,7 @@
       "Psychic"
     ],
     "prev_evolution": [{
-      "num": "023",
+      "num": "Level 22",
       "name": "Ekans"
     }]
   }, {
@@ -751,7 +751,7 @@
       "Ground"
     ],
     "next_evolution": [{
-      "num": "026",
+      "num": "Thunder Stone",
       "name": "Raichu"
     }]
   }, {
@@ -775,7 +775,7 @@
       "Ground"
     ],
     "prev_evolution": [{
-      "num": "025",
+        "num": "Thunder Stone",
       "name": "Pikachu"
     }]
   }, {
@@ -802,7 +802,7 @@
       "Ice"
     ],
     "next_evolution": [{
-      "num": "028",
+      "num": "Level 22",
       "name": "Sandslash"
     }]
   }, {
@@ -828,14 +828,14 @@
       "Ice"
     ],
     "prev_evolution": [{
-      "num": "027",
+      "num": "Level 22",
       "name": "Sandshrew"
     }]
   }, {
     "desc" : "Females are more sensitive to smells than males. While foraging, they’ll use their whiskers to check wind direction and stay downwind of predators.",
     "id": 29,
     "num": "029",
-    "name": "Nidoran ♀ (Female)",
+    "name": "Nidoran-F",
     "img": "http://www.serebii.net/pokemongo/pokemon/029.png",
     "type": [
       "Poison"
@@ -857,10 +857,10 @@
       "Psychic"
     ],
     "next_evolution": [{
-      "num": "030",
+      "num": "Level 16",
       "name": "Nidorina"
     }, {
-      "num": "031",
+      "num": "Moon Stone",
       "name": "Nidoqueen"
     }]
   }, {
@@ -889,11 +889,11 @@
       "Psychic"
     ],
     "prev_evolution": [{
-      "num": "029",
-      "name": "Nidoran(Female)"
+      "num": "Level 16",
+      "name": "Nidoran-F"
     }],
     "next_evolution": [{
-      "num": "031",
+      "num": "Moon Stone",
       "name": "Nidoqueen"
     }]
   }, {
@@ -921,17 +921,17 @@
       "Psychic"
     ],
     "prev_evolution": [{
-      "num": "029",
-      "name": "Nidoran(Female)"
+      "num": "Level 16",
+      "name": "Nidoran-F"
     }, {
-      "num": "030",
+      "num": "Moon Stone",
       "name": "Nidorina"
     }]
   }, {
     "desc" : "The horn on a male Nidoran’s forehead contains a powerful poison. This is a very cautious Pokémon, always straining its large ears.",
     "id": 32,
     "num": "032",
-    "name": "Nidoran ♂ (Male)",
+    "name": "Nidoran-M",
     "img": "http://www.serebii.net/pokemongo/pokemon/032.png",
     "type": [
       "Poison"
@@ -953,10 +953,10 @@
       "Psychic"
     ],
     "next_evolution": [{
-      "num": "033",
+      "num": "Level 16",
       "name": "Nidorino"
     }, {
-      "num": "034",
+      "num": "Moon Stone",
       "name": "Nidoking"
     }]
   }, {
@@ -982,11 +982,11 @@
       "Psychic"
     ],
     "prev_evolution": [{
-      "num": "032",
-      "name": "Nidoran(Male)"
+      "num": "Level 16",
+      "name": "Nidoran-M"
     }],
     "next_evolution": [{
-      "num": "034",
+      "num": "Moon Stone",
       "name": "Nidoking"
     }]
   }, {
@@ -1014,11 +1014,11 @@
       "Psychic"
     ],
     "prev_evolution": [{
-      "num": "032",
-      "name": "Nidoran(Male)"
+      "num": "Level 16",
+      "name": "Nidoran-M"
     }, {
-      "num": "033",
-      "name": "Nidorino"
+      "num": "Nidorino",
+      "name": "Moon Stone"
     }]
   }, {
     "desc" : "It is said that happiness will come to those who see a gathering of Clefairy dancing under a full moon.",
@@ -1045,7 +1045,7 @@
       "Fighting"
     ],
     "next_evolution": [{
-      "num": "036",
+      "num": "Moon Stone",
       "name": "Clefable"
     }]
   }, {
@@ -1069,7 +1069,7 @@
       "Fighting"
     ],
     "prev_evolution": [{
-      "num": "035",
+      "num": "Moon Stone",
       "name": "Clefairy"
     }]
   }, {
@@ -1099,7 +1099,7 @@
       "Rock"
     ],
     "next_evolution": [{
-      "num": "038",
+      "num": "Fire Stone",
       "name": "Ninetales"
     }]
   }, {
@@ -1125,7 +1125,7 @@
       "Rock"
     ],
     "prev_evolution": [{
-      "num": "037",
+      "num": "Fire Stone",
       "name": "Vulpix"
     }]
   }, {
@@ -1150,7 +1150,7 @@
       "Fighting"
     ],
     "next_evolution": [{
-      "num": "040",
+      "num": "Moon Stone",
       "name": "Wigglytuff"
     }]
   }, {
@@ -1174,7 +1174,7 @@
       "Fighting"
     ],
     "prev_evolution": [{
-      "num": "039",
+      "num": "Moon Stone",
       "name": "Jigglypuff"
     }]
   }, {
@@ -1206,7 +1206,7 @@
       "Rock"
     ],
     "next_evolution": [{
-      "num": "042",
+      "num": "Level 22",
       "name": "Golbat"
     }]
   }, {"desc" : "It loves to drink other creatures’ blood. It’s said that if it finds others of its kind going hungry, it sometimes shares the blood it’s gathered.",
@@ -1233,7 +1233,7 @@
       "Rock"
     ],
     "prev_evolution": [{
-      "num": "041",
+      "num": "Level 22",
       "name": "Zubat"
     }]
   }, {"desc" : "If exposed to moonlight, it starts to move. It roams far and wide at night to scatter its seeds.",
@@ -1261,10 +1261,10 @@
       "Psychic"
     ],
     "next_evolution": [{
-      "num": "044",
+      "num": "Level 21",
       "name": "Gloom"
     }, {
-      "num": "045",
+      "num": "Leaf Stone",
       "name": "Vileplume"
     }]
   }, {"desc" : "Its pistils exude an incredibly foul odor. The horrid stench can cause fainting at a distance of 1.25 miles.",
@@ -1292,11 +1292,11 @@
       "Psychic"
     ],
     "prev_evolution": [{
-      "num": "043",
+      "num": "Level 21",
       "name": "Oddish"
     }],
     "next_evolution": [{
-      "num": "045",
+      "num": "Leaf Stone",
       "name": "Vileplume"
     }]
   }, {"desc" : "It has the world’s largest petals. With every step, the petals shake out heavy clouds of toxic pollen.",
@@ -1323,10 +1323,10 @@
       "Psychic"
     ],
     "prev_evolution": [{
-      "num": "043",
+      "num": "Level 21",
       "name": "Oddish"
     }, {
-      "num": "044",
+      "num": "Leaf Stone",
       "name": "Gloom"
     }]
   }, {
@@ -1357,7 +1357,7 @@
       "Rock"
     ],
     "next_evolution": [{
-      "num": "047",
+      "num": "Level 24",
       "name": "Parasect"
     }]
   }, {
@@ -1387,7 +1387,7 @@
       "Rock"
     ],
     "prev_evolution": [{
-      "num": "046",
+      "num": "Level 24",
       "name": "Paras"
     }]
   }, {
@@ -1419,7 +1419,7 @@
       "Rock"
     ],
     "next_evolution": [{
-      "num": "049",
+      "num": "Level 31",
       "name": "Venomoth"
     }]
   }, {
@@ -1447,7 +1447,7 @@
       "Rock"
     ],
     "prev_evolution": [{
-      "num": "048",
+      "num": "Level 31",
       "name": "Venonat"
     }]
   }, {
@@ -1474,7 +1474,7 @@
       "Ice"
     ],
     "next_evolution": [{
-      "num": "051",
+      "num": "Level 26",
       "name": "Dugtrio"
     }]
   }, {
@@ -1500,7 +1500,7 @@
       "Ice"
     ],
     "prev_evolution": [{
-      "num": "050",
+      "num": "Level 26",
       "name": "Diglett"
     }]
   }, {
@@ -1525,7 +1525,7 @@
       "Fighting"
     ],
     "next_evolution": [{
-      "num": "053",
+      "num": "Level 28",
       "name": "Persian"
     }]
   }, {
@@ -1549,7 +1549,7 @@
       "Fighting"
     ],
     "prev_evolution": [{
-      "num": "052",
+      "num": "Level 28",
       "name": "Meowth"
     }]
   }, {
@@ -1575,7 +1575,7 @@
       "Grass"
     ],
     "next_evolution": [{
-      "num": "055",
+      "num": "Level 33",
       "name": "Golduck"
     }]
   }, {
@@ -1600,7 +1600,7 @@
       "Grass"
     ],
     "prev_evolution": [{
-      "num": "054",
+      "num": "Level 33",
       "name": "Psyduck"
     }]
   }, {
@@ -1630,7 +1630,7 @@
       "Fairy"
     ],
     "next_evolution": [{
-      "num": "057",
+      "num": "Level 28",
       "name": "Primeape"
     }]
   }, {
@@ -1656,7 +1656,7 @@
       "Fairy"
     ],
     "prev_evolution": [{
-      "num": "056",
+      "num": "Level 28",
       "name": "Mankey"
     }]
   }, {
@@ -1686,7 +1686,7 @@
       "Rock"
     ],
     "next_evolution": [{
-      "num": "059",
+      "num": "Fire Stone",
       "name": "Arcanine"
     }]
   }, {
@@ -1712,7 +1712,7 @@
       "Rock"
     ],
     "prev_evolution": [{
-      "num": "058",
+      "num": "Fire Stone",
       "name": "Growlithe"
     }]
   }, {
@@ -1741,11 +1741,11 @@
       "Grass"
     ],
     "next_evolution": [{
-      "num": "061",
+      "num": "Level 25",
       "name": "Poliwhirl"
     }, {
       "num": "062",
-      "name": "Poliwrath"
+      "name": "Water Stone"
     }]
   }, {
     "desc" : "Staring at the swirl on its belly causes drowsiness. This trait of Poliwhirl’s has been used in place of lullabies to get children to go to sleep.",
@@ -1770,11 +1770,11 @@
       "Grass"
     ],
     "prev_evolution": [{
-      "num": "060",
+      "num": "Level 25",
       "name": "Poliwag"
     }],
     "next_evolution": [{
-      "num": "062",
+      "num": "Water Stone",
       "name": "Poliwrath"
     }]
   }, {
@@ -1803,10 +1803,10 @@
       "Fairy"
     ],
     "prev_evolution": [{
-      "num": "060",
+      "num": "Level 25",
       "name": "Poliwag"
     }, {
-      "num": "061",
+      "num": "Water Stone",
       "name": "Poliwhirl"
     }]
   }, {
@@ -1836,10 +1836,10 @@
       "Dark"
     ],
     "next_evolution": [{
-      "num": "064",
+      "num": "Level 16",
       "name": "Kadabra"
     }, {
-      "num": "065",
+      "num": "Trade",
       "name": "Alakazam"
     }]
   }, {
@@ -1866,11 +1866,11 @@
       "Dark"
     ],
     "prev_evolution": [{
-      "num": "063",
+      "num": "Level 16",
       "name": "Abra"
     }],
     "next_evolution": [{
-      "num": "065",
+      "num": "Trade",
       "name": "Alakazam"
     }]
   }, {
@@ -1896,10 +1896,10 @@
       "Dark"
     ],
     "prev_evolution": [{
-      "num": "063",
+      "num": "Level 16",
       "name": "Abra"
     }, {
-      "num": "064",
+      "num": "Trade",
       "name": "Kadabra"
     }]
   }, {
@@ -1929,10 +1929,10 @@
       "Fairy"
     ],
     "next_evolution": [{
-      "num": "067",
+      "num": "Level 28",
       "name": "Machoke"
     }, {
-      "num": "068",
+      "num": "Trade",
       "name": "Machamp"
     }]
   }, {
@@ -1959,11 +1959,11 @@
       "Fairy"
     ],
     "prev_evolution": [{
-      "num": "066",
+      "num": "Level 28",
       "name": "Machop"
     }],
     "next_evolution": [{
-      "num": "068",
+      "num": "Trade",
       "name": "Machamp"
     }]
   }, {
@@ -1989,10 +1989,10 @@
       "Fairy"
     ],
     "prev_evolution": [{
-      "num": "066",
+      "num": "Level 28",
       "name": "Machop"
     }, {
-      "num": "067",
+      "num": "Trade",
       "name": "Machoke"
     }]
   }, {
@@ -2021,10 +2021,10 @@
       "Psychic"
     ],
     "next_evolution": [{
-      "num": "070",
+      "num": "Level 21",
       "name": "Weepinbell"
     }, {
-      "num": "071",
+      "num": "Leaf Stone",
       "name": "Victreebel"
     }]
   }, {
@@ -2053,11 +2053,11 @@
       "Psychic"
     ],
     "prev_evolution": [{
-      "num": "069",
+      "num": "Level 21",
       "name": "Bellsprout"
     }],
     "next_evolution": [{
-      "num": "071",
+      "num": "Leaf Stone",
       "name": "Victreebel"
     }]
   }, {
@@ -2085,11 +2085,11 @@
       "Psychic"
     ],
     "prev_evolution": [{
-      "num": "069",
+      "num": "Level 21",
       "name": "Bellsprout"
     }, {
-      "num": "070",
-      "name": "Weepinbell"
+      "num": "Victreebel",
+      "name": "Leaf Stone"
     }]
   }, {
     "desc" : "Tentacool is not a particularly strong swimmer. It drifts across the surface of shallow seas as it searches for prey.",
@@ -2116,7 +2116,7 @@
       "Psychic"
     ],
     "next_evolution": [{
-      "num": "073",
+      "num": "Level 30",
       "name": "Tentacruel"
     }]
   }, {
@@ -2143,7 +2143,7 @@
       "Psychic"
     ],
     "prev_evolution": [{
-      "num": "072",
+      "num": "Level 30",
       "name": "Tentacool"
     }]
   }, {
@@ -2177,10 +2177,10 @@
       "Steel"
     ],
     "next_evolution": [{
-      "num": "075",
+      "num": "Level 25",
       "name": "Graveler"
     }, {
-      "num": "076",
+      "num": "Trade",
       "name": "Golem"
     }]
   }, {
@@ -2218,7 +2218,7 @@
       "name": "Geodude"
     }],
     "next_evolution": [{
-      "num": "076",
+      "num": "Trade",
       "name": "Golem"
     }]
   }, {
@@ -2248,10 +2248,10 @@
       "Steel"
     ],
     "prev_evolution": [{
-      "num": "074",
+      "num": "Level 25",
       "name": "Geodude"
     }, {
-      "num": "075",
+      "num": "Trade",
       "name": "Graveler"
     }]
   }, {
@@ -2281,7 +2281,7 @@
       "Rock"
     ],
     "next_evolution": [{
-      "num": "078",
+      "num": "Level 40",
       "name": "Rapidash"
     }]
   }, {
@@ -2307,7 +2307,7 @@
       "Rock"
     ],
     "prev_evolution": [{
-      "num": "077",
+      "num": "Level 40",
       "name": "Ponyta"
     }]
   }, {
@@ -2337,7 +2337,7 @@
       "Dark"
     ],
     "next_evolution": [{
-      "num": "080",
+      "num": "Level 37",
       "name": "Slowbro"
     }]
   }, {
@@ -2366,7 +2366,7 @@
       "Dark"
     ],
     "prev_evolution": [{
-      "num": "079",
+      "num": "Level 37",
       "name": "Slowpoke"
     }]
   }, {
@@ -2396,7 +2396,7 @@
       "Ground"
     ],
     "next_evolution": [{
-      "num": "082",
+      "num": "Level 30",
       "name": "Magneton"
     }]
   }, {
@@ -2422,7 +2422,7 @@
       "Ground"
     ],
     "prev_evolution": [{
-      "num": "081",
+      "num": "Level 30",
       "name": "Magnemite"
     }]
   }, {
@@ -2474,7 +2474,7 @@
       "Rock"
     ],
     "next_evolution": [{
-      "num": "085",
+      "num": "Level 31",
       "name": "Dodrio"
     }]
   }, {
@@ -2500,7 +2500,7 @@
       "Rock"
     ],
     "prev_evolution": [{
-      "num": "084",
+      "num": "Level 31",
       "name": "Doduo"
     }]
   }, {
@@ -2529,7 +2529,7 @@
       "Grass"
     ],
     "next_evolution": [{
-      "num": "087",
+      "num": "Level 34",
       "name": "Dewgong"
     }]
   }, {
@@ -2557,7 +2557,7 @@
       "Rock"
     ],
     "prev_evolution": [{
-      "num": "086",
+      "num": "Level 34",
       "name": "Seel"
     }]
   }, {
@@ -2583,7 +2583,7 @@
       "Psychic"
     ],
     "next_evolution": [{
-      "num": "089",
+      "num": "Level 38",
       "name": "Muk"
     }]
   }, {
@@ -2608,7 +2608,7 @@
       "Psychic"
     ],
     "prev_evolution": [{
-      "num": "088",
+      "num": "Level 38",
       "name": "Grimer"
     }]
   }, {
@@ -2634,7 +2634,7 @@
       "Grass"
     ],
     "next_evolution": [{
-      "num": "091",
+      "num": "Water Stone",
       "name": "Cloyster"
     }]
   }, {
@@ -2662,7 +2662,7 @@
       "Rock"
     ],
     "prev_evolution": [{
-      "num": "090",
+      "num": "Water Stone",
       "name": "Shellder"
     }]
   }, {
@@ -2691,10 +2691,10 @@
       "Dark"
     ],
     "next_evolution": [{
-      "num": "093",
+      "num": "Level 25",
       "name": "Haunter"
     }, {
-      "num": "094",
+      "num": "Trade",
       "name": "Gengar"
     }]
   }, {
@@ -2726,11 +2726,11 @@
       "Dark"
     ],
     "prev_evolution": [{
-      "num": "092",
+      "num": "Level 25",
       "name": "Gastly"
     }],
     "next_evolution": [{
-      "num": "094",
+      "num": "Trade",
       "name": "Gengar"
     }]
   }, {
@@ -2758,10 +2758,10 @@
       "Dark"
     ],
     "prev_evolution": [{
-      "num": "092",
+      "num": "Level 25",
       "name": "Gastly"
     }, {
-      "num": "093",
+      "num": "Trade",
       "name": "Haunter"
     }]
   }, {
@@ -2817,7 +2817,7 @@
       "Dark"
     ],
     "next_evolution": [{
-      "num": "097",
+      "num": "Level 26",
       "name": "Hypno"
     }]
   }, {
@@ -2843,7 +2843,7 @@
       "Dark"
     ],
     "prev_evolution": [{
-      "num": "096",
+      "num": "Level 26",
       "name": "Drowzee"
     }]
   }, {
@@ -2872,7 +2872,7 @@
       "Grass"
     ],
     "next_evolution": [{
-      "num": "099",
+      "num": "Level 28",
       "name": "Kingler"
     }]
   }, {
@@ -2897,7 +2897,7 @@
       "Grass"
     ],
     "prev_evolution": [{
-      "num": "098",
+      "num": "Level 28",
       "name": "Krabby"
     }]
   }, {
@@ -2925,7 +2925,7 @@
       "Ground"
     ],
     "next_evolution": [{
-      "num": "101",
+      "num": "Level 30",
       "name": "Electrode"
     }]
   }, {
@@ -2949,7 +2949,7 @@
       "Ground"
     ],
     "prev_evolution": [{
-      "num": "100",
+      "num": "Level 30",
       "name": "Voltorb"
     }]
   }, {
@@ -2984,7 +2984,7 @@
       "Dark"
     ],
     "next_evolution": [{
-      "num": "103",
+      "num": "Leaf Stone",
       "name": "Exeggutor"
     }]
   }, {
@@ -3015,7 +3015,7 @@
       "Dark"
     ],
     "prev_evolution": [{
-      "num": "102",
+      "num": "Leaf Stone",
       "name": "Exeggcute"
     }]
   }, {
@@ -3042,7 +3042,7 @@
       "Ice"
     ],
     "next_evolution": [{
-      "num": "105",
+      "num": "Level 28",
       "name": "Marowak"
     }]
   }, {
@@ -3068,7 +3068,7 @@
       "Ice"
     ],
     "prev_evolution": [{
-      "num": "104",
+      "num": "Level 28",
       "name": "Cubone"
     }]
   }, {
@@ -3158,7 +3158,7 @@
       "Psychic"
     ],
     "next_evolution": [{
-      "num": "110",
+      "num": "Level 35",
       "name": "Weezing"
     }]
   }, {
@@ -3183,7 +3183,7 @@
       "Psychic"
     ],
     "prev_evolution": [{
-      "num": "109",
+      "num": "Level 35",
       "name": "Koffing"
     }]
   }, {
@@ -3214,7 +3214,7 @@
       "Steel"
     ],
     "next_evolution": [{
-      "num": "112",
+      "num": "Level 42",
       "name": "Rhydon"
     }]
   }, {
@@ -3244,7 +3244,7 @@
       "Steel"
     ],
     "prev_evolution": [{
-      "num": "111",
+      "num": "Level 42",
       "name": "Rhyhorn"
     }]
   }, {
@@ -3334,7 +3334,7 @@
       "Grass"
     ],
     "next_evolution": [{
-      "num": "117",
+      "num": "Level 32",
       "name": "Seadra"
     }]
   }, {
@@ -3359,7 +3359,7 @@
       "Grass"
     ],
     "prev_evolution": [{
-      "num": "116",
+      "num": "Level 32",
       "name": "Horsea"
     }]
   }, {
@@ -3388,7 +3388,7 @@
       "Grass"
     ],
     "next_evolution": [{
-      "num": "119",
+      "num": "Level 32",
       "name": "Seaking"
     }]
   }, {
@@ -3413,7 +3413,7 @@
       "Grass"
     ],
     "prev_evolution": [{
-      "num": "118",
+      "num": "Level 32",
       "name": "Goldeen"
     }]
   }, {
@@ -3442,7 +3442,7 @@
       "Grass"
     ],
     "next_evolution": [{
-      "num": "121",
+      "num": "Water Stone",
       "name": "Starmie"
     }]
   }, {
@@ -3471,7 +3471,7 @@
       "Dark"
     ],
     "prev_evolution": [{
-      "num": "120",
+      "num": "Water Stone",
       "name": "Staryu"
     }]
   }, {
@@ -3657,7 +3657,7 @@
       "Grass"
     ],
     "next_evolution": [{
-      "num": "130",
+      "num": "Level 20",
       "name": "Gyarados"
     }]
   }, {
@@ -3683,7 +3683,7 @@
       "Rock"
     ],
     "prev_evolution": [{
-      "num": "129",
+      "num": "Level 20",
       "name": "Magikarp"
     }]
   }, {
@@ -3755,13 +3755,13 @@
       "Fighting"
     ],
     "next_evolution": [{
-      "num": "134",
+      "num": "Water Stone",
       "name": "Vaporeon"
     }, {
-      "num": "135",
+      "num": "Thunder Stone",
       "name": "Jolteon"
     }, {
-      "num": "136",
+      "num": "Fire Stone",
       "name": "Flareon"
     }]
   }, {
@@ -3786,7 +3786,7 @@
       "Grass"
     ],
     "prev_evolution": [{
-      "num": "133",
+      "num": "Water Stone",
       "name": "Eevee"
     }]
   }, {
@@ -3810,7 +3810,7 @@
       "Ground"
     ],
     "prev_evolution": [{
-      "num": "133",
+      "num": "Thunder Stone",
       "name": "Eevee"
     }]
   }, {
@@ -3836,7 +3836,7 @@
       "Rock"
     ],
     "prev_evolution": [{
-      "num": "133",
+      "num": "Fire Stone",
       "name": "Eevee"
     }]
   }, {
@@ -3885,7 +3885,7 @@
       "Ground"
     ],
     "next_evolution": [{
-      "num": "139",
+      "num": "Level 40",
       "name": "Omastar"
     }]
   }, {
@@ -3913,7 +3913,7 @@
       "Ground"
     ],
     "prev_evolution": [{
-      "num": "138",
+      "num": "Level 40",
       "name": "Omanyte"
     }]
   }, {
@@ -3945,7 +3945,7 @@
       "Ground"
     ],
     "next_evolution": [{
-      "num": "141",
+      "num": "Level 40",
       "name": "Kabutops"
     }]
   }, {
@@ -3973,7 +3973,7 @@
       "Ground"
     ],
     "prev_evolution": [{
-      "num": "140",
+      "num": "Level 40",
       "name": "Kabuto"
     }]
   }, {
@@ -4117,10 +4117,10 @@
       "Fairy"
     ],
     "next_evolution": [{
-      "num": "148",
+      "num": "Level 30",
       "name": "Dragonair"
     }, {
-      "num": "149",
+      "num": "Level 55",
       "name": "Dragonite"
     }]
   }, {
@@ -4147,11 +4147,11 @@
       "Fairy"
     ],
     "prev_evolution": [{
-      "num": "147",
+      "num": "Level 30",
       "name": "Dratini"
     }],
     "next_evolution": [{
-      "num": "149",
+      "num": "Level 55",
       "name": "Dragonite"
     }]
   }, {
@@ -4179,10 +4179,10 @@
       "Fairy"
     ],
     "prev_evolution": [{
-      "num": "147",
+      "num": "Level 30",
       "name": "Dratini"
     }, {
-      "num": "148",
+      "num": "Level 55",
       "name": "Dragonair"
     }]
   }, {

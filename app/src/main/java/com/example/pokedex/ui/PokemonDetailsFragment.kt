@@ -47,8 +47,6 @@ class PokemonDetailsFragment : Fragment() {
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-
         binding.pokemonDetailImage
         binding.detailsName.text = args.name
         binding.detailsWeight.text = args.wight
@@ -85,61 +83,87 @@ class PokemonDetailsFragment : Fragment() {
         // pokemon is and modify "evolution" section
 
         Log.d("nextevolution checker", args.nextEvolution?.get(2).toString())
+        //pokemon is the first in a 3 pokemon evolution tree
         if (args.nextEvolution?.get(2)!! != "null") {
             binding.evo1.text = args.name
             binding.evo2.text = args.nextEvolution?.get(0)
             binding.evo3.text = args.nextEvolution?.get(2)
-        } else if (args.nextEvolution?.get(0)!! != "null" && args.prevEvolution?.get(0)!! != "null") {
+            binding.evoCond1.text = args.nextEvolution?.get(1)
+            binding.evoCond2.text = args.nextEvolution?.get(3)
+        }
+
+        //pokemon is the second in a 3 pokemon evolution tree
+        else if (args.nextEvolution?.get(0)!! != "null" && args.prevEvolution?.get(0)!! != "null") {
             binding.evo1.text = args.prevEvolution?.get(0)
             binding.evo2.text = args.name
             binding.evo3.text = args.nextEvolution?.get(0)
-        } else if (args.prevEvolution?.get(2)!! != "null") {
+            binding.evoCond1.text = args.prevEvolution?.get(1)
+            binding.evoCond2.text = args.nextEvolution?.get(1)
+        }
+
+        //pokemon is the third in a 3 pokemon evolution tree
+        else if (args.prevEvolution?.get(2)!! != "null") {
             binding.evo1.text = args.prevEvolution?.get(0)
             binding.evo2.text = args.prevEvolution?.get(2)
             binding.evo3.text = args.name
-        } else if (args.nextEvolution?.get(1)!! != "null" && args.prevEvolution!!.get(0)!! == "null") {
+            binding.evoCond1.text = args.prevEvolution?.get(1)
+            binding.evoCond2.text = args.prevEvolution?.get(3)
+        }
+
+        //pokemon is the first of a 2 pokemon evolution tree
+        else if (args.nextEvolution?.get(1)!! != "null" && args.prevEvolution!!.get(0)!! == "null") {
             binding.evo1.text = args.name
             binding.evo2.text = args.nextEvolution?.get(0)
-        } else if (args.prevEvolution?.get(1)!! != "null" && args.nextEvolution!!.get(0)!! == "null") {
+            binding.evoCond1.text = args.nextEvolution?.get(1)
+        }
+
+        //pokemon is the second of a 2 pokemon evolution tree
+        else if (args.prevEvolution?.get(1)!! != "null" && args.nextEvolution!!.get(0)!! == "null") {
             binding.evo1.text = args.prevEvolution?.get(0)
             binding.evo2.text = args.name
+            binding.evoCond1.text = args.prevEvolution?.get(1)
         } else null
 
 
         // adds pokemon pictures to the evolution tree
-
         Picasso.get()
-            .load("https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/${binding.evo1.text.toString().toLowerCase()}.png")
+            .load(
+                "https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/${
+                    binding.evo1.text.toString().toLowerCase()
+                }.png"
+            )
             .resize(200, 200)
             .into(binding.evoFigure1)
 
         Picasso.get()
-            .load("https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/${binding.evo2.text.toString().toLowerCase()}.png")
+            .load(
+                "https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/${
+                    binding.evo2.text.toString().toLowerCase()
+                }.png"
+            )
             .resize(200, 200)
             .into(binding.evoFigure2)
 
-     if (binding.evo3.text.isNotBlank()){
-        Picasso.get()
-            .load("https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/${binding.evo3.text.toString().toLowerCase()}.png")
-            .resize(200, 200)
-            .into(binding.evoFigure3)} else null
+        if (binding.evo3.text.isNotBlank()) {
+            Picasso.get()
+                .load(
+                    "https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/${
+                        binding.evo3.text.toString().toLowerCase()
+                    }.png"
+                )
+                .resize(200, 200)
+                .into(binding.evoFigure3)
+        } else null
 
 
         // adds main pokemon picture
-
         Picasso.get()
-            .load("https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/${args.nameLowerCase}.png")
+            .load("https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/${args.nameLowerCase.replace("'", "")}.png")
             .resize(150, 150)
             .into(binding.pokemonDetailImage)
-        binding.pokemonDetailImage.run {
-            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
-                clipToOutline = true
-            }
-        }
-
 
         val url =
-            "https://play.pokemonshowdown.com/audio/cries/${args.nameLowerCase}.mp3" // your URL here
+            "https://play.pokemonshowdown.com/audio/cries/${args.nameLowerCase.replace("-", "").replace("'", "")}.mp3" // your URL here
         val mediaPlayer: MediaPlayer? = MediaPlayer().apply {
             setAudioStreamType(AudioManager.STREAM_MUSIC)
             setDataSource(url)
