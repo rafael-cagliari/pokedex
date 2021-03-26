@@ -1,7 +1,9 @@
 package com.example.pokedex.adapter
 
+import android.annotation.SuppressLint
 import android.graphics.drawable.Drawable
 import android.os.Build
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -66,6 +68,8 @@ class PokemonAdapter(private val pokemonList: List<Pokemon>) :
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val pokemon = pokemonFilterList[position]
         holder.pokemonName.text = pokemon.name
+        holder.typeColor(pokemon.type?.get(0))
+            ?.let { holder.pokemonImage.setBackgroundResource(it) }
         Picasso.get()
             .load("${pokemon.img}")
             .resize(150, 150)
@@ -107,7 +111,7 @@ class PokemonAdapter(private val pokemonList: List<Pokemon>) :
                         pokemon.prevEvolution?.getOrNull(1)?.num.toString()
                     ),
 
-                )
+                    )
             holder.itemView.findNavController().navigate(action)
         }
 
@@ -180,6 +184,61 @@ class PokemonAdapter(private val pokemonList: List<Pokemon>) :
             }
 
         }
+
+        @SuppressLint("ResourceAsColor")
+        fun typeColor(type: String?): Int? {
+
+            when (type) {
+
+                "Rock" -> {
+                    return R.color.rock
+                }
+                "Bug" -> {
+                    return R.color.bug
+                }
+                "Ground" -> {
+                    return R.color.ground
+                }
+                "Fire" -> {
+                    return R.color.fire
+                }
+                "Water" -> {
+                    return R.color.water
+                }
+                "Ghost" -> {
+                    return R.color.ghost
+                }
+                "Dragon" -> {
+                    return R.color.dragon
+                }
+                "Psychic" -> {
+                    return R.color.psychic
+                }
+                "Electric" -> {
+                    return R.color.electric
+                }
+                "Fighting" -> {
+                    return R.color.fight
+                }
+                "Flying" -> {
+                    return R.color.flying
+                }
+                "Grass" -> {
+                    return R.color.grass
+                }
+                "Normal" -> {
+                    return R.color.normal
+                }
+                "Poison" -> {
+                    return R.color.poison
+                }
+                "Ice" -> {
+                    return R.color.ice
+                }
+                else -> return null
+            }
+        }
+
 
     }
 }

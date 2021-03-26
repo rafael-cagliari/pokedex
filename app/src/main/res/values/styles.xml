@@ -2,6 +2,7 @@
 <resources>
 
     <style name="PokeDetailsTitle" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/munro</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_marginTop">15dp</item>
@@ -15,6 +16,7 @@
     </style>
 
     <style name="PokeDetailsFilling" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/munronarrow</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_marginTop">5dp</item>

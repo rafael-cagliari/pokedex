@@ -273,7 +273,7 @@
       "num": "Level 16",
       "name": "Squirtle"
     }, {
-      "num": "Level 32",
+      "num": "Level 36",
       "name": "Wartortle"
     }]
   }, {
@@ -1017,8 +1017,8 @@
       "num": "Level 16",
       "name": "Nidoran-M"
     }, {
-      "num": "Nidorino",
-      "name": "Moon Stone"
+      "num": "Moon Stone",
+      "name": "Nidorino"
     }]
   }, {
     "desc" : "It is said that happiness will come to those who see a gathering of Clefairy dancing under a full moon.",
@@ -1744,8 +1744,8 @@
       "num": "Level 25",
       "name": "Poliwhirl"
     }, {
-      "num": "062",
-      "name": "Water Stone"
+      "num": "Water Stone",
+      "name": "Poliwrath"
     }]
   }, {
     "desc" : "Staring at the swirl on its belly causes drowsiness. This trait of Poliwhirl’s has been used in place of lullabies to get children to go to sleep.",
@@ -2088,8 +2088,8 @@
       "num": "Level 21",
       "name": "Bellsprout"
     }, {
-      "num": "Victreebel",
-      "name": "Leaf Stone"
+      "num": "Leaf stone",
+      "name": "Weepinbell"
     }]
   }, {
     "desc" : "Tentacool is not a particularly strong swimmer. It drifts across the surface of shallow seas as it searches for prey.",
