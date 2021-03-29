@@ -5,10 +5,7 @@ import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
 
-
-
-class NextEvolution
-{
+class NextEvolution {
     @SerializedName("num")
     @Expose
     val num: String? = null

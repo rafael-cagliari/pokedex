@@ -1,9 +1,6 @@
 package com.example.pokedex.adapter
 
-import android.annotation.SuppressLint
-import android.graphics.drawable.Drawable
 import android.os.Build
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,12 +9,13 @@ import android.widget.Filterable
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.RequiresApi
-import androidx.core.content.ContextCompat
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pokedex.R
 import com.example.pokedex.model.Pokemon
 import com.example.pokedex.ui.PokemonListFragmentDirections
+import com.example.pokedex.utils.TypeColor.typeColor
+import com.example.pokedex.utils.TypeSelector.typeSelector
 import com.squareup.picasso.Picasso
 import java.util.*
 import kotlin.collections.ArrayList
@@ -31,8 +29,8 @@ class PokemonAdapter(private val pokemonList: List<Pokemon>) :
         return object : Filter() {
             override fun performFiltering(constraint: CharSequence?): FilterResults {
                 val charSearch = constraint.toString()
-                if (charSearch.isEmpty()) {
-                    pokemonFilterList = pokemonList.toMutableList()
+                pokemonFilterList = if (charSearch.isEmpty()) {
+                    pokemonList.toMutableList()
                 } else {
                     val resultList = ArrayList<Pokemon>()
                     for (row in pokemonList) {
@@ -42,7 +40,7 @@ class PokemonAdapter(private val pokemonList: List<Pokemon>) :
                             resultList.add(row)
                         }
                     }
-                    pokemonFilterList = resultList
+                    resultList
                 }
                 val filterResults = FilterResults()
                 filterResults.values = pokemonFilterList
@@ -68,7 +66,7 @@ class PokemonAdapter(private val pokemonList: List<Pokemon>) :
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val pokemon = pokemonFilterList[position]
         holder.pokemonName.text = pokemon.name
-        holder.typeColor(pokemon.type?.get(0))
+        typeColor(holder.itemView.context, pokemon.type?.get(0))
             ?.let { holder.pokemonImage.setBackgroundResource(it) }
         Picasso.get()
             .load("${pokemon.img}")
@@ -80,9 +78,19 @@ class PokemonAdapter(private val pokemonList: List<Pokemon>) :
             }
         }
         holder.pokemonId.text = "Nº: " + pokemon.id
-        holder.pokemonType1.setImageDrawable(holder.typeSelector(pokemon.type?.get(0)))
+        holder.pokemonType1.setImageDrawable(
+            typeSelector(
+                holder.itemView.context,
+                pokemon.type?.get(0)
+            )
+        )
         if (pokemon.type?.size!! > 1) {
-            holder.pokemonType2.setImageDrawable(holder.typeSelector(pokemon.type?.get(1)))
+            holder.pokemonType2.setImageDrawable(
+                typeSelector(
+                    holder.itemView.context,
+                    pokemon.type[1]
+                )
+            )
         } else {
             holder.pokemonType2.setImageDrawable(null)
         }
@@ -128,116 +136,6 @@ class PokemonAdapter(private val pokemonList: List<Pokemon>) :
         val pokemonId: TextView = view.findViewById(R.id.pokemon_id)
         val pokemonType1: ImageView = view.findViewById(R.id.type1)
         val pokemonType2: ImageView = view.findViewById(R.id.type2)
-
-
-        @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
-        fun typeSelector(type: String?): Drawable? {
-
-            when (type) {
-
-                "Rock" -> {
-                    return ContextCompat.getDrawable(view.context, R.drawable.rock)
-                }
-                "Bug" -> {
-                    return ContextCompat.getDrawable(view.context, R.drawable.bug)
-                }
-                "Ground" -> {
-                    return ContextCompat.getDrawable(view.context, R.drawable.ground)
-                }
-                "Fire" -> {
-                    return ContextCompat.getDrawable(view.context, R.drawable.fire)
-                }
-                "Water" -> {
-                    return ContextCompat.getDrawable(view.context, R.drawable.water)
-                }
-                "Ghost" -> {
-                    return ContextCompat.getDrawable(view.context, R.drawable.ghost)
-                }
-                "Dragon" -> {
-                    return ContextCompat.getDrawable(view.context, R.drawable.dragon)
-                }
-                "Psychic" -> {
-                    return ContextCompat.getDrawable(view.context, R.drawable.psychc)
-                }
-                "Electric" -> {
-                    return ContextCompat.getDrawable(view.context, R.drawable.electr)
-                }
-                "Fighting" -> {
-                    return ContextCompat.getDrawable(view.context, R.drawable.fight)
-                }
-                "Flying" -> {
-                    return ContextCompat.getDrawable(view.context, R.drawable.flying)
-                }
-                "Grass" -> {
-                    return ContextCompat.getDrawable(view.context, R.drawable.grass)
-                }
-                "Normal" -> {
-                    return ContextCompat.getDrawable(view.context, R.drawable.normal)
-                }
-                "Poison" -> {
-                    return ContextCompat.getDrawable(view.context, R.drawable.poison)
-                }
-                "Ice" -> {
-                    return ContextCompat.getDrawable(view.context, R.drawable.ice)
-                }
-                else -> return null
-            }
-
-        }
-
-        @SuppressLint("ResourceAsColor")
-        fun typeColor(type: String?): Int? {
-
-            when (type) {
-
-                "Rock" -> {
-                    return R.color.rock
-                }
-                "Bug" -> {
-                    return R.color.bug
-                }
-                "Ground" -> {
-                    return R.color.ground
-                }
-                "Fire" -> {
-                    return R.color.fire
-                }
-                "Water" -> {
-                    return R.color.water
-                }
-                "Ghost" -> {
-                    return R.color.ghost
-                }
-                "Dragon" -> {
-                    return R.color.dragon
-                }
-                "Psychic" -> {
-                    return R.color.psychic
-                }
-                "Electric" -> {
-                    return R.color.electric
-                }
-                "Fighting" -> {
-                    return R.color.fight
-                }
-                "Flying" -> {
-                    return R.color.flying
-                }
-                "Grass" -> {
-                    return R.color.grass
-                }
-                "Normal" -> {
-                    return R.color.normal
-                }
-                "Poison" -> {
-                    return R.color.poison
-                }
-                "Ice" -> {
-                    return R.color.ice
-                }
-                else -> return null
-            }
-        }
 
 
     }

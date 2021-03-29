@@ -1,19 +1,17 @@
 package com.example.pokedex.ui
 
-import android.annotation.SuppressLint
 import android.os.Bundle
-import android.view.*
-import android.widget.ArrayAdapter
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import com.example.pokedex.R
 import com.example.pokedex.adapter.PokemonAdapter
 import com.example.pokedex.data.Datasource
 import com.example.pokedex.databinding.PokemonListFragmentBinding
-import com.example.pokedex.model.Pokemon
 
 class PokemonListFragment : Fragment() {
     private var _binding: PokemonListFragmentBinding? = null
@@ -28,7 +26,7 @@ class PokemonListFragment : Fragment() {
 
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = PokemonListFragmentBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -61,63 +59,5 @@ class PokemonListFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
-
-    companion object {
-        fun newInstance() = PokemonListFragment()
-    }
-
-    @SuppressLint("ResourceAsColor")
-    fun typeColor(type: String?): Int? {
-
-        when (type) {
-
-            "Rock" -> {
-                return R.color.rock
-            }
-            "Bug" -> {
-                return R.color.bug
-            }
-            "Ground" -> {
-                return R.color.ground
-            }
-            "Fire" -> {
-                return R.color.fire
-            }
-            "Water" -> {
-                return R.color.water
-            }
-            "Ghost" -> {
-                return R.color.ghost
-            }
-            "Dragon" -> {
-                return R.color.dragon
-            }
-            "Psychic" -> {
-                return R.color.psychic
-            }
-            "Electric" -> {
-                return R.color.electric
-            }
-            "Fighting" -> {
-                return R.color.fight
-            }
-            "Flying" -> {
-                return R.color.flying
-            }
-            "Grass" -> {
-                return R.color.grass
-            }
-            "Normal" -> {
-                return R.color.normal
-            }
-            "Poison" -> {
-                return R.color.poison
-            }
-            "Ice" -> {
-                return R.color.ice
-            }
-            else -> return null
-        }
-    }
-
+    
 }
