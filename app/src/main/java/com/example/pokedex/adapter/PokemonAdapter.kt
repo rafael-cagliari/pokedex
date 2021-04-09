@@ -24,6 +24,10 @@ import kotlin.collections.ArrayList
 class PokemonAdapter(private val pokemonList: List<Pokemon>) :
 
     RecyclerView.Adapter<PokemonAdapter.ItemViewHolder>(), Filterable {
+
+    /*filtering for pokemon searching bar, the recycler view will always return the filtering results,
+    * except for when there is no search, returning the whole list */
+
     var pokemonFilterList = pokemonList.toMutableList()
     override fun getFilter(): Filter {
         return object : Filter() {
@@ -50,11 +54,13 @@ class PokemonAdapter(private val pokemonList: List<Pokemon>) :
 
             @Suppress("UNCHECKED_CAST")
             override fun publishResults(constraint: CharSequence?, results: FilterResults?) {
+
                 pokemonFilterList = results?.values as MutableList<Pokemon>
                 notifyDataSetChanged()
             }
         }
     }
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         val adapterLayout = LayoutInflater.from(parent.context)
@@ -64,10 +70,17 @@ class PokemonAdapter(private val pokemonList: List<Pokemon>) :
 
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
+
+
         val pokemon = pokemonFilterList[position]
+
         holder.pokemonName.text = pokemon.name
+
+        //changes the background color for the item based on its primary type
         typeColor(holder.itemView.context, pokemon.type?.get(0))
             ?.let { holder.pokemonImage.setBackgroundResource(it) }
+
+        //loads the pokemon image
         Picasso.get()
             .load("${pokemon.img}")
             .resize(150, 150)
@@ -77,7 +90,10 @@ class PokemonAdapter(private val pokemonList: List<Pokemon>) :
                 clipToOutline = true
             }
         }
+
         holder.pokemonId.text = "Nº: " + pokemon.id
+
+        //applies the drawables for pokemon type
         holder.pokemonType1.setImageDrawable(
             typeSelector(
                 holder.itemView.context,
@@ -94,6 +110,10 @@ class PokemonAdapter(private val pokemonList: List<Pokemon>) :
         } else {
             holder.pokemonType2.setImageDrawable(null)
         }
+
+        /* clicking a pokemon on the list navigates to PokemonDetailsFragment, passing along
+        the pokemon's properties as arguments
+        */
         holder.pokemonImage.setOnClickListener {
             val action =
                 PokemonListFragmentDirections.actionPokemonListFragmentToPokemonDetailsFragment(
@@ -105,18 +125,23 @@ class PokemonAdapter(private val pokemonList: List<Pokemon>) :
                     wight = pokemon.weight!!,
                     type = pokemon.type.toTypedArray(),
                     weaknesses = pokemon.weaknesses!!.toTypedArray(),
+
+                    /*passes all of the next and previous evolutions as an array
+                    containing the name and level for that evolution, passing a "null" string in case of a null parameter
+                    ex.: ["raichu", "16", "none", "none"]
+                    */
                     nextEvolution = arrayOf(
                         pokemon.nextEvolution?.getOrNull(0)?.name.toString(),
-                        pokemon.nextEvolution?.getOrNull(0)?.num.toString(),
+                        pokemon.nextEvolution?.getOrNull(0)?.evoLevel.toString(),
                         pokemon.nextEvolution?.getOrNull(1)?.name.toString(),
-                        pokemon.nextEvolution?.getOrNull(1)?.num.toString()
+                        pokemon.nextEvolution?.getOrNull(1)?.evoLevel.toString()
                     ),
 
                     prevEvolution = arrayOf(
                         pokemon.prevEvolution?.getOrNull(0)?.name.toString(),
-                        pokemon.prevEvolution?.getOrNull(0)?.num.toString(),
+                        pokemon.prevEvolution?.getOrNull(0)?.evoLevel.toString(),
                         pokemon.prevEvolution?.getOrNull(1)?.name.toString(),
-                        pokemon.prevEvolution?.getOrNull(1)?.num.toString()
+                        pokemon.prevEvolution?.getOrNull(1)?.evoLevel.toString()
                     ),
 
                     )
@@ -136,7 +161,5 @@ class PokemonAdapter(private val pokemonList: List<Pokemon>) :
         val pokemonId: TextView = view.findViewById(R.id.pokemon_id)
         val pokemonType1: ImageView = view.findViewById(R.id.type1)
         val pokemonType2: ImageView = view.findViewById(R.id.type2)
-
-
     }
 }

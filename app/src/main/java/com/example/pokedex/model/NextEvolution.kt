@@ -8,7 +8,7 @@ import com.google.gson.annotations.SerializedName
 class NextEvolution {
     @SerializedName("num")
     @Expose
-    val num: String? = null
+    val evoLevel: String? = null
 
     @SerializedName("name")
     @Expose

@@ -8,11 +8,12 @@ import com.google.gson.reflect.TypeToken
 
 
 class Datasource() {
+
+    // parses the json file, converts it to Gson and returns a PokemonResponse object (which consists of a list o Pokemon objects)
     fun gsonFromJson(context: Context, filename: String): PokemonResponse {
         val parser = ParseUtils()
         val jsonFileString = parser.parseFromJson(context, filename) ?: "error while parsing"
         Log.d("response", jsonFileString)
-
         val gson = Gson()
         val pokemonTypeToken = object : TypeToken<PokemonResponse>() {}.type
 

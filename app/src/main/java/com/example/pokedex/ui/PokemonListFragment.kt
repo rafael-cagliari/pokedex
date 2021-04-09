@@ -14,6 +14,7 @@ import com.example.pokedex.data.Datasource
 import com.example.pokedex.databinding.PokemonListFragmentBinding
 
 class PokemonListFragment : Fragment() {
+
     private var _binding: PokemonListFragmentBinding? = null
     private val binding get() = _binding!!
 
@@ -23,6 +24,7 @@ class PokemonListFragment : Fragment() {
     }
 
     override fun onCreateView(
+
 
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -34,12 +36,17 @@ class PokemonListFragment : Fragment() {
     private lateinit var recyclerView: RecyclerView
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
+
         val pokemonData = Datasource().gsonFromJson(requireContext(), "response.json")
         recyclerView = binding.recyclerView
         recyclerView.layoutManager = StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL)
+
+        //pokemonData is a PokemonResponse object containing a list of Pokemon type objects
         val adapter = PokemonAdapter(pokemonData.pokemons ?: listOf())
         recyclerView.adapter = adapter
 
+        // Searchview configuring
         binding.pokemonSearch.setOnQueryTextListener(object : SearchView.OnQueryTextListener,
             androidx.appcompat.widget.SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {

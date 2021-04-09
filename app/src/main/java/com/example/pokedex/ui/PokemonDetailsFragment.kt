@@ -21,6 +21,7 @@ import com.squareup.picasso.Picasso
 @Suppress("UNREACHABLE_CODE")
 class PokemonDetailsFragment : Fragment() {
 
+
     private val args: PokemonDetailsFragmentArgs by navArgs()
     private var _binding: PokemonDetailsFragmentBinding? = null
     private val binding get() = _binding!!
@@ -47,20 +48,27 @@ class PokemonDetailsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val firstType = args.type[0]
-        typeColor(requireContext(), firstType)?.let { binding.evoBox.setBackgroundResource(it) }
         binding.pokemonDetailImage
+
         binding.detailsName.text = args.name
+
         binding.detailsWeight.text = args.wight
+
         binding.detailsHeight.text = args.height
+
         binding.detailsNum.text = args.number
+
         binding.description.text = args.description
+
+        //sets drawable for pokemon type
         binding.typeDetail1.setImageDrawable(typeSelector(requireContext(), args.type[0]))
         if (args.type.size > 1) {
             binding.typeDetail2.setImageDrawable(typeSelector(requireContext(), args.type[1]))
         } else {
             binding.typeDetail2.setImageDrawable(null)
         }
+
+        //sets drawable for pokemon weaknesses
         binding.weaknessDetail1.setImageDrawable(typeSelector(requireContext(), args.weaknesses[0]))
         if (args.weaknesses.size > 1) {
             binding.weaknessDetail2.setImageDrawable(
@@ -110,6 +118,11 @@ class PokemonDetailsFragment : Fragment() {
                 )
             )
         }
+
+        //sets the background color of the evolution tree box based on the primary type of the pokemon
+        val firstType = args.type[0]
+        typeColor(requireContext(), firstType)?.let { binding.evoBox.setBackgroundResource(it) }
+
 
         // if and else if testing 6 different conditions to establish in which evolution stage
         // pokemon is and modify "evolution" section
@@ -196,9 +209,7 @@ class PokemonDetailsFragment : Fragment() {
 
 
         // adds main pokemon picture
-
         Picasso.get()
-
             .load(
                 "https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/${
                     args.nameLowerCase.replace(
@@ -211,6 +222,7 @@ class PokemonDetailsFragment : Fragment() {
 
             .into(binding.pokemonDetailImage)
 
+        // adds pokemon cry
         val url =
             "https://play.pokemonshowdown.com/audio/cries/${
                 args.nameLowerCase.replace("-", "").replace("'", "").replace(". ", "")
@@ -220,8 +232,6 @@ class PokemonDetailsFragment : Fragment() {
             setDataSource(url)
             prepare()
             start()
-
-
         }
     }
 
