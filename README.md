@@ -16,6 +16,7 @@ You can check their number and type.</p>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Weight</li>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Height</li>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Description</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Type</li>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Weaknesses</li>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Evolution tree</li>
 </ul>
