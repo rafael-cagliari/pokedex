@@ -7,7 +7,7 @@
     >
 
     <androidx.core.widget.NestedScrollView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints">
 
@@ -32,9 +32,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
+                        android:fontFamily="@font/munro"
                         android:gravity="center"
                         android:text=""
-                        android:fontFamily="@font/munro"
                         android:textColor="#0C0C0C"
                         android:textSize="24dp"
                         android:textStyle="bold"
@@ -45,12 +45,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
+                        android:fontFamily="@font/munrosmall"
                         android:gravity="center"
                         android:text=""
                         android:textColor="#0C0C0C"
                         android:textSize="12dp"
                         android:textStyle="bold"
-                        android:fontFamily="@font/munrosmall"
                         tools:text="30" />
 
                     <ImageView
@@ -69,8 +69,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_gravity="center_vertical">
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
 
                     <TextView
                         style="@style/PokeDetailsTitle"
@@ -103,19 +103,20 @@
                 android:orientation="vertical">
 
             </LinearLayout>
+
             <TextView
-                android:fontFamily="@font/munrosmall"
                 android:id="@+id/description"
                 style="@style/PokeDetailsFilling"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="10dp"
+                android:fontFamily="@font/munrosmall"
                 android:lineSpacingExtra="3.5dp"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
                 android:text="sasasas"
                 android:textColor="#0C0C0C"
-                android:textSize="16sp"
-                />
+                android:textSize="16sp" />
+
             <TextView
                 style="@style/PokeDetailsTitle"
                 android:layout_marginTop="15dp"
@@ -221,112 +222,109 @@
                 android:id="@+id/cardView"
                 android:layout_height="wrap_content"
                 >
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="wrap_content"
-                android:id="@+id/evoBox"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:orientation="horizontal"
-                android:paddingLeft="35dp"
-                android:paddingBottom="10dp"
-                android:paddingRight="35dp">
-
-                <ImageView
-                    android:id="@+id/evo_figure1"
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="wrap_content"
+                    android:id="@+id/evoBox"
                     android:layout_height="wrap_content"
-                    android:scaleType="fitEnd"
-                    app:layout_constraintEnd_toEndOf="@+id/evo1"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteY="0dp" />
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="15dp">
 
-                <TextView
-                    android:id="@+id/evo1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/munro"
-                    android:textSize="16dp"
-                    android:textStyle="bold"
-                    app:layout_constraintTop_toBottomOf="@+id/evo_figure1"
-                    tools:ignore="MissingConstraints"
+                    <ImageView
+                        android:id="@+id/evo_figure1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-                    tools:text="EVOLUÇÃO 1" />
+                    <TextView
+                        android:id="@+id/evo1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/munro"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/evo_figure1"
+                        app:layout_constraintStart_toStartOf="@+id/evo_figure1"
+                        app:layout_constraintTop_toBottomOf="@+id/evo_figure1"
+                        tools:ignore="MissingConstraints"
+                        tools:text="EVOLUÇÃO 1" />
 
-                <TextView
-                    android:id="@+id/evo_cond1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:fontFamily="@font/munronarrow"
-                    android:textSize="15dp"
-                    app:layout_constraintEnd_toStartOf="@+id/evo2"
-                    app:layout_constraintHorizontal_bias="0.52"
-                    app:layout_constraintStart_toEndOf="@+id/evo1"
-                    app:layout_constraintTop_toBottomOf="@+id/evo1"
-                    tools:ignore="MissingConstraints"
-                    tools:text="Level 16" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/evo_figure2"
+                        app:layout_constraintStart_toEndOf="@+id/evo_figure1"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
 
-                <TextView
-                    android:id="@+id/evo_cond2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:fontFamily="@font/munronarrow"
-                    android:textSize="15dp"
-                    app:layout_constraintEnd_toStartOf="@+id/evo3"
-                    app:layout_constraintHorizontal_bias="0.529"
-                    app:layout_constraintStart_toEndOf="@+id/evo2"
-                    app:layout_constraintTop_toBottomOf="@+id/evo1"
-                    tools:ignore="MissingConstraints"
-                    tools:text="Level 36" />
+                    <TextView
+                        android:id="@+id/evo2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/munro"
+                        android:text=""
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/evo_figure2"
+                        app:layout_constraintStart_toStartOf="@+id/evo_figure2"
+                        app:layout_constraintTop_toBottomOf="@+id/evo_figure2"
+                        tools:text="EVOLUÇÃO 2" />
 
-                <ImageView
-                    android:id="@+id/evo_figure2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:scaleType="fitEnd"
-                    app:layout_constraintEnd_toEndOf="@+id/evo2"
-                    app:layout_constraintStart_toStartOf="@+id/evo2"
-                    tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/evo_cond1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/munronarrow"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="15dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/evo2"
+                        app:layout_constraintStart_toEndOf="@+id/evo1"
+                        app:layout_constraintTop_toBottomOf="@+id/evo1"
+                        tools:text="Level 16" />
 
-                <TextView
-                    android:id="@+id/evo2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:fontFamily="@font/munro"
-                    android:text=""
-                    android:textSize="16dp"
-                    android:textStyle="bold"
-                    app:layout_constraintStart_toEndOf="@+id/evo1"
-                    app:layout_constraintTop_toBottomOf="@+id/evo_figure2"
-                    tools:text="EVOLUÇÃO 2" />
+                    <ImageView
+                        android:id="@+id/evo_figure3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@+id/evo_figure2" />
+
+                    <TextView
+                        android:id="@+id/evo3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/munro"
+                        android:text=""
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/evo_figure3"
+                        app:layout_constraintStart_toStartOf="@+id/evo_figure3"
+                        app:layout_constraintTop_toBottomOf="@+id/evo_figure3"
+                        tools:text="EVOLUÇÃO 3" />
+
+                    <TextView
+                        android:id="@+id/evo_cond2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/munronarrow"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="15dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/evo3"
+                        app:layout_constraintStart_toEndOf="@+id/evo2"
+                        app:layout_constraintTop_toBottomOf="@+id/evo2"
+                        tools:text="Level 36" />
 
 
-                <ImageView
-                    android:id="@+id/evo_figure3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:scaleType="fitEnd"
-                    app:layout_constraintEnd_toEndOf="@+id/evo3"
-                    app:layout_constraintStart_toStartOf="@+id/evo3"
-                    tools:ignore="MissingConstraints" />
 
-                <TextView
-                    android:id="@+id/evo3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:fontFamily="@font/munro"
-                    android:text=""
-                    android:textSize="16dp"
-                    android:textStyle="bold"
-                    app:layout_constraintStart_toEndOf="@+id/evo2"
-                    app:layout_constraintTop_toBottomOf="@+id/evo_figure3"
-                    tools:text="EVOLUÇÃO 3" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

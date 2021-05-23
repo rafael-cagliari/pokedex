@@ -37,7 +37,6 @@ class PokemonListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
-
         val pokemonData = Datasource().gsonFromJson(requireContext(), "response.json")
         recyclerView = binding.recyclerView
         recyclerView.layoutManager = StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL)
@@ -66,5 +65,5 @@ class PokemonListFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
-    
+
 }
