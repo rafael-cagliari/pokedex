@@ -23,3 +23,5 @@ You can check their number and type.</p>
 <p>This screen also plays the Pokemon’s original GameBoy cry.</p>
 <p><img src="https://user-images.githubusercontent.com/59263016/114237591-adaf0680-9959-11eb-9b39-6af4d549feb9.png" alt="enter image description here" width="250"></p>
 
+<p> App in action </p>
+<p><img src="https://miro.medium.com/max/776/1*hF3rpf-pUbVdO0YdMB2ZCA.gif" alt="enter image description here" width="250"></p>
