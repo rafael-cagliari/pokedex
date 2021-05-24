@@ -9,7 +9,8 @@
         android:label="Pokedex" >
         <action
             android:id="@+id/action_pokemonListFragment_to_pokemonDetailsFragment"
-            app:destination="@id/pokemonDetailsFragment" >
+            app:destination="@id/pokemonDetailsFragment"
+            app:enterAnim="@anim/left_to_right">
             <argument
                 android:name="name"
                 android:defaultValue="oiiii" />
