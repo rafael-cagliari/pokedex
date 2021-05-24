@@ -5,6 +5,7 @@ import android.media.AudioManager
 import android.media.MediaPlayer
 import android.os.Build
 import android.os.Bundle
+import android.telecom.Call
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -15,7 +16,9 @@ import androidx.navigation.fragment.navArgs
 import com.example.pokedex.databinding.PokemonDetailsFragmentBinding
 import com.example.pokedex.utils.TypeColor.typeColor
 import com.example.pokedex.utils.TypeSelector.typeSelector
+import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
+import java.lang.Exception
 
 
 @Suppress("UNREACHABLE_CODE")
@@ -194,7 +197,15 @@ class PokemonDetailsFragment : Fragment() {
                 }.png"
             )
             .resize(170, 140)
-            .into(binding.evoFigure2)
+            .into(binding.evoFigure2, object : Callback{
+                override fun onSuccess() {
+                    binding.evoBox.visibility=View.VISIBLE
+                }
+                override fun onError(e: Exception?) {
+                   Log.d("Image loading", "failed")
+                }
+            })
+
 
         if (binding.evo3.text.isNotBlank()) {
             Picasso.get()

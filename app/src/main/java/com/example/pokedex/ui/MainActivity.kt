@@ -2,6 +2,9 @@ package com.example.pokedex.ui
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.os.PersistableBundle
+import android.view.ViewGroup
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
@@ -11,6 +14,7 @@ import com.example.pokedex.databinding.MainActivityBinding
 
 
 class MainActivity : AppCompatActivity() {
+
     @SuppressLint("ResourceType")
     private lateinit var navController: NavController
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,6 +27,9 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController)
     }
 
+    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
+        super.onCreate(savedInstanceState, persistentState)
+    }
     override fun onSupportNavigateUp(): Boolean {
         return navController.navigateUp() || super.onSupportNavigateUp()
     }

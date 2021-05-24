@@ -31,6 +31,7 @@ class PokemonListFragment : Fragment() {
     ): View {
         _binding = PokemonListFragmentBinding.inflate(inflater, container, false)
         return binding.root
+
     }
 
     private lateinit var recyclerView: RecyclerView
